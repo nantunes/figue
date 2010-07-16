@@ -67,7 +67,7 @@ function load() {
 }}}
 
 This page will only print
-<pre>
+{{{
                                      |                 
                     __________________________________ 
                     |                                | 
@@ -81,4 +81,4 @@ This page will only print
     |           |          |         |       |       | 
 Microsoft     Skype     Yahoo!     eBay     SAP     IBM
 
-</pre>
+}}}
