@@ -5,7 +5,7 @@
 figue is a javascript module to cluster data and visualize clusters.
 The current version only proposes hierarchical clustering with the most common linkage techniques: single-linkage, complete-linkage and average linkage. Tree can be visualized by means of dendograms. 
 
-For more information about hierarchical clustering please refer to.
+For more information about hierarchical clustering please refer to [http://en.wikipedia.org/wiki/Cluster_analysis#Hierarchical_clustering Wikipedia].
 
 Here is an [http://web.science.mq.edu.au/~jydelort/figue/demo.html interactive demo]. 
 
