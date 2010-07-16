@@ -25,6 +25,7 @@ var data = [
  ] ;
 
 // Create the labels and the vectors
+
 var labels = new Array ;
 var vectors = new Array ;
 for (var i = 0 ; i < data.length ; i++) {
@@ -37,6 +38,16 @@ for (var i = 0 ; i < data.length ; i++) {
 root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE, figue.SIMPLE_LINKAGE) ;
 
 // Produce the dendogram
+
 dendogram = root.buildDendogram (5, true) ;
 
+// Print it in a 'pre' element
+
+var pre = document.getElementById('mypre').innerHTML = dendogram
+
 }}}
+
+`<pre>`
+jfkdsf    fdjsfds
+
+`</pre>`
