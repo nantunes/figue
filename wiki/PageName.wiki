@@ -7,47 +7,58 @@ The current version only proposes hierarchical clustering with the most common l
 
 For more information about hierarchical clustering please refer to.
 
+Here is a demo.
 
-= Details =
+= Example =
+
 
 {{{
+<html>
+<head>
 
-// Data source: LinkedIn
-// Initial data are businesses that need to be clustered according to their size (nb of employees) and revenue (in mln$)
+<script>
 
-var data = [ 
-    {'company': 'Microsoft' , 'size': 91259, 'incomes': 60420},
-    {'company': 'IBM' , 'size': 400000, 'incomes': 98787},
-    {'company': 'Skype' , 'size': 700, 'revenue': 716},
-    {'company': 'SAP' , 'size': 48000, 'incomes': 11567},
-    {'company': 'Yahoo!' , 'size': 14000 , 'incomes': 6426 },
-    {'company': 'eBay' , 'size': 15000, 'incomes': 8700},
- ] ;
 
-// Create the labels and the vectors
+function load() {
 
-var labels = new Array ;
-var vectors = new Array ;
-for (var i = 0 ; i < data.length ; i++) {
-    labels[i] = data[i]['company'] ;
-    vectors[i] = [ data[i]['employees'] , data[i]['incomes']] ;
-}
+  // Data source: LinkedIn
+  // Initial data are businesses that need to be clustered according to their size (nb of employees) and revenue (in mln$)
 
-// Generate a hierarchical tree
+  var data = [ 
+      {'company': 'Microsoft' , 'size': 91259, 'incomes': 60420},
+      {'company': 'IBM' , 'size': 400000, 'incomes': 98787},
+      {'company': 'Skype' , 'size': 700, 'revenue': 716},
+      {'company': 'SAP' , 'size': 48000, 'incomes': 11567},
+      {'company': 'Yahoo!' , 'size': 14000 , 'incomes': 6426 },
+      {'company': 'eBay' , 'size': 15000, 'incomes': 8700},
+   ] ;
 
-root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE, figue.SIMPLE_LINKAGE) ;
+  // Create the labels and the vectors
 
-// Produce the dendogram
+  var labels = new Array ;
+  var vectors = new Array ;
+  for (var i = 0 ; i < data.length ; i++) {
+      labels[i] = data[i]['company'] ;
+      vectors[i] = [ data[i]['employees'] , data[i]['incomes']] ;
+  }
 
-dendogram = root.buildDendogram (5, true) ;
+  // Generate a hierarchical tree
 
-// Print it in a 'pre' element
+  root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SIMPLE_LINKAGE) ;
 
-var pre = document.getElementById('mypre').innerHTML = dendogram
+  // Produce the dendogram
+
+  dendogram = root.buildDendogram (5, true) ;
+
+  // Render the dendogram in the page
+  document.getElementById('mypre').innerHTML = dendogram
 
 }}}
+</script>
 
-`<pre>`
-jfkdsf    fdjsfds
+<body>
 
-`</pre>`
+<pre id="mypre"></pre>
+
+</body>
+</html>
