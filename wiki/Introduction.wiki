@@ -7,7 +7,7 @@ The current version only proposes hierarchical clustering with the most common l
 
 For more information about hierarchical clustering please refer to [http://en.wikipedia.org/wiki/Cluster_analysis#Hierarchical_clustering Wikipedia].
 
-Here is an [http://web.science.mq.edu.au/~jydelort/figue/demo.html interactive demo]. 
+Here is an [http://web.science.mq.edu.au/~jydelort/figue/demo.html interactive demo] demonstrating the current possibilities of figue. 
 
 = Example =
 
