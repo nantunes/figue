@@ -34,7 +34,7 @@ function load() {
       {'company': 'eBay' , 'size': 15000, 'revenue': 8700},
    ] ;
 
-  // Create the labels and the vectors
+  // Create the labels and the vectors describing the data
 
   var labels = new Array ;
   var vectors = new Array ;
