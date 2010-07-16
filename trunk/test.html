@@ -1,0 +1,189 @@
+<html>
+
+<style>
+
+div {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size:9pt;
+	font-family: Arial;
+}
+
+#input_panel {
+	display: block;
+	clear: both;
+	width:800px;
+	height: 300px;
+}
+
+#output_panel {
+	display: none;
+	clear:both;
+	text-align: center;
+	width: 800px;
+}
+
+#data_panel {
+	display:table;
+	float: left ;
+	width: 50%;
+	height: 80%;
+}
+
+#data_panel fieldset {
+	height: 90%;
+}
+
+#data {
+	width: 100%;
+	height: 70%;
+}
+
+#param_panel {
+	display:block;
+	float: left;
+	width: 50%;
+	height: 80%;
+}
+
+#param_panel #params {
+	display: table-cell;
+	vertical-align:bottom;
+	height: 90%;
+}
+
+
+#cluster_button {
+	width: 100% ;
+	height: 4em;
+	display:table ;
+}
+
+</style>
+
+<script type="text/javascript" src="figue.js"></script>
+
+
+<script type="text/javascript">
+
+
+var datasets = {
+	'people': "anna,37,2\nkarin,65,3\njohn,34,2\ntom,38,5\nmarc,38,6\nstephany,38,3\n" ,
+}
+
+
+function updateDS() {
+	var ds = document.getElementById('datasets').value ;
+	if (ds in datasets)
+		document.getElementById('data').value = datasets[ds] ;
+	else
+		document.getElementById('data').value = "" ;
+}
+
+function parseData(data) {
+	var labels = new Array() ;
+	var vectors = new Array() ;
+	lines = data.split("\n") ;
+	for (var i = 0 ; i < lines.length ; i++) {
+		if (lines[i].length == 0)
+			continue ;
+		var elements = lines[i].split(",") ;
+		var label = elements.shift() ;
+		var vector = new Array() ;
+		for (j = 0 ; j < elements.length ; j++)
+			vector.push(parseFloat(elements[j])) ;
+		vectors.push(vector) ;
+		labels.push(label) ;
+	}
+	return {'labels': labels , 'vectors': vectors} ;
+}
+
+function test() {
+	var data = parseData (document.getElementById('data').value) ;
+	var space = parseInt (document.getElementById('space').value) ;
+	var balanced = (radioValue('balanced') === 'true') ;
+	var linkage = parseInt (radioValue('linkage')) ;
+	root = figue.agglomerate(data['labels'], data['vectors'] , figue.EUCLIDIAN_DISTANCE, linkage) ;
+	document.getElementById('output_panel').style.display = 'block' ;
+	document.getElementById('text').innerHTML = root.buildDendogram(space, balanced)  ;
+}
+
+function radioValue(name) {
+	var radios = document.getElementsByName(name) ;
+	for (var i = 0 ; i < radios.length ; i++) 
+		if (radios[i].checked) 
+			return radios[i].value ;
+}
+
+</script>
+<body onload="updateDS();">
+
+
+<div id="input_panel">
+
+<div id="data_panel">
+<fieldset>
+<legend>Data</legend>
+Enter your data:
+<textarea id="data">
+</textarea>
+<div style="margin-top:10px">
+Or use an existing dataset:
+<select id="datasets" onchange="updateDS();">
+<option value="none" selected>-</option>
+<option value="people">People (age, children)</option>
+<option value="complex"></option>
+</select>
+</div>
+</fieldset>
+</div>
+
+<div id="param_panel">
+<fieldset id="params">
+<legend>Parameters</legend>
+<fieldset>
+<legend>Linkage method</legend>
+<input type="radio" name="linkage" value="0" checked/>Single-linkage<br />
+<input type="radio" name="linkage" value="1" />Complete-linkage<br/>
+<input type="radio" name="linkage" value="2" />Average-linkage<br/>
+</fieldset>
+<fieldset>
+<legend>Balance dendogram</legend>
+<input type="radio" name="balanced" value="true" checked/>Yes<br />
+<input type="radio" name="balanced" value="false" />No <br/>
+</fieldset>
+<fieldset>
+<legend>Minimum spacing between nodes in dendogram</legend>
+<select id="space">
+<option value="3">3</option>
+<option value="5">5</option>
+<option value="7" selected="selected">7</option>
+<option value="9">9</option>
+</select>
+</fieldset>
+</fieldset>
+</div>
+
+<div id="cluster_button" style="">
+<div style="display:table-row; width:100%;text-align:center;">
+<div style="vertical-align: middle; display:table-cell;">
+<input type="button" onclick="test();" value="Cluster data and display dendogram" />
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div id="output_panel">
+<fieldset>
+<legend>Dendogram</legend>
+<pre id="text"> </pre>
+</fieldset>
+</div>
+</body>
+</html>
+
