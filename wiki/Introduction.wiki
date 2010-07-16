@@ -79,6 +79,6 @@ This page will print:
     |           |               |            |       | 
     |           |          ___________       |       | 
     |           |          |         |       |       | 
-Microsoft     Skype     Yahoo!     eBay     SAP     IBM
+Microsoft     Skype     Yahoo     eBay     SAP     IBM
 
 }}}
