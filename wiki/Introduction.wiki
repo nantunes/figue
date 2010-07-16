@@ -1,0 +1,67 @@
+#summary figue is a javascript module to cluster data and visualize clusters.
+
+= Introduction =
+
+figue is a javascript module to cluster data and visualize clusters.
+The current version only proposes hierarchical clustering with the most common linkage techniques: single-linkage, complete-linkage and average linkage. Tree can be visualized by means of dendograms. 
+
+For more information about hierarchical clustering please refer to.
+
+Here is a demo.
+
+= Example =
+
+
+{{{
+<html>
+<head>
+
+<script type="text/javascript" src="figue.js"></script>
+
+<script type="text/javascript">
+
+function load() {
+
+  // Data source: LinkedIn
+  // Initial data are businesses that need to be clustered according to their size (nb of employees) and revenue (in mln$)
+
+  var data = [ 
+      {'company': 'Microsoft' , 'size': 91259, 'revenue': 60420},
+      {'company': 'IBM' , 'size': 400000, 'revenue': 98787},
+      {'company': 'Skype' , 'size': 700, 'revenue': 716},
+      {'company': 'SAP' , 'size': 48000, 'revenue': 11567},
+      {'company': 'Yahoo!' , 'size': 14000 , 'revenue': 6426 },
+      {'company': 'eBay' , 'size': 15000, 'revenue': 8700},
+   ] ;
+
+  // Create the labels and the vectors
+
+  var labels = new Array ;
+  var vectors = new Array ;
+  for (var i = 0 ; i < data.length ; i++) {
+      labels[i] = data[i]['company'] ;
+      vectors[i] = [ data[i]['size'] , data[i]['revenue']] ;
+  }
+
+  // Generate a hierarchical tree
+
+  root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SIMPLE_LINKAGE) ;
+
+  // Produce the dendogram
+
+  dendogram = root.buildDendogram (5, true) ;
+
+  // Render the dendogram in the page
+  document.getElementById('mypre').innerHTML = dendogram
+}
+
+</script>
+
+<body onload="load();">
+
+<pre id="mypre"></pre>
+
+</body>
+</html>
+
+}}}
