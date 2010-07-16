@@ -8,6 +8,8 @@
 
 
 var figue = function () {
+
+
 	function euclidianDistance (vec1 , vec2) {
 		var N = vec1.length ;
 		var d = 0 ;
@@ -149,7 +151,7 @@ var figue = function () {
 					if (distMatrix[c1][j] < distMatrix[c2][j])
 						distMatrix[j][c1] = distMatrix[c1][j] = distMatrix[c2][j] ;
 				} else if (linkage == figue.AVERAGE_LINKAGE) {
-					var avg = ( distMatrix[c1][j] + distMatrix[c2][j])  / (cSize[c1] + cSize[j]) 
+					var avg = ( cSize[c1] * distMatrix[c1][j] + cSize[c2] * distMatrix[c2][j])  / (cSize[c1] + cSize[j]) 
 					distMatrix[j][c1] = distMatrix[c1][j] = avg ;
 				}
 			}
