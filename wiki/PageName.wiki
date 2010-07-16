@@ -16,8 +16,9 @@ Here is a demo.
 <html>
 <head>
 
-<script>
+<script type="text/javascript" src="figue.js"></script>
 
+<script type="text/javascript">
 
 function load() {
 
