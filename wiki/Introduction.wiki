@@ -82,3 +82,7 @@ This page will print:
 Microsoft     Skype     Yahoo!     eBay     SAP     IBM
 
 }}}
+
+==TODO==
+- Calculate centroids of clusters
+- Add kmeans
