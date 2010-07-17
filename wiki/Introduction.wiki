@@ -86,3 +86,5 @@ Microsoft     Skype     Yahoo!     eBay     SAP     IBM
 ==TODO==
   * Calculate centroids of clusters
   * Add kmeans
+  * In demo.html add function to randomly generate DS on any size
+  * Run and report results of a scalability analysis
