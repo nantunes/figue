@@ -84,7 +84,7 @@ Microsoft     Skype     Yahoo!     eBay     SAP     IBM
 }}}
 
 ==TODO==
-  * Calculate centroids of clusters
+  * In each node calculate centroid of the cluster, tree depth and nb of items (leaves)
   * Add kmeans
   * In demo.html add function to randomly generate DS on any size
   * Run and report results of a scalability analysis
