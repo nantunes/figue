@@ -48,8 +48,13 @@ function load() {
   root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SIMPLE_LINKAGE) ;
 
   // Produce the dendogram
+  // Currently the dendogram can be customized to:
+  //  - display labels
+  //  - display centroids
+  //  - be balanced (i.e. all leaves at the same level)
+  //  - control the minimum spacing between nodes
 
-  dendogram = root.buildDendogram (5, true) ;
+  dendogram = root.buildDendogram (5, true, true, true) ;
 
   // Render the dendogram in the page
   document.getElementById('mypre').innerHTML = dendogram
