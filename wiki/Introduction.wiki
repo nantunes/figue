@@ -44,7 +44,10 @@ function load() {
   }
 
   // Generate a hierarchical tree, returns the root of the tree
-  // each node contains the centroid value, the subtree depth and the cluster size
+  // each node contains:
+  //  - the centroid value, 
+  //  - the subtree depth and
+  //  - the cluster size
 
   root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SIMPLE_LINKAGE) ;
 
