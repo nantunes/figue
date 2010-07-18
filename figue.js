@@ -26,35 +26,84 @@ var figue = function () {
 		return str ;
 	}
 	
-	
-	function generateDendogram(tree, sep, balanced) {
+	function calculateCentroid (c1Size , c1Centroid , c2Size , c2Centroid) {
+		var newCentroid = new Array(c1Centroid.length) ;
+		var newSize = c1Size + c2Size ;
+		for (var i = 0 ; i < c1Centroid.length ; i++) 
+			newCentroid[i] = (c1Size * c1Centroid[i] + c2Size * c2Centroid[i]) / newSize ;
+		return newCentroid ;	
+	}
+
+
+	function centerString(str, width) {
+		var diff = width - str.length ;
+		if (diff < 0)
+			return ;
+
+		var halfdiff = Math.floor(diff / 2) ;
+		return repeatChar (" " , halfdiff) + str + repeatChar (" " , diff - halfdiff)  ;
+	}
+
+	function putString(str, width, index) {
+		var diff = width - str.length ;
+		if (diff < 0)
+			return ;
+
+		return repeatChar (" " , index) + str + repeatChar (" " , width - (str.length+index)) ;
+	}
+
+	function prettyVector(vector) {
+		var vals = new Array(vector.length) ;
+		var precision = Math.pow(10, figue.PRINT_VECTOR_VALUE_PRECISION) ; 
+		for (var i = 0 ; i < vector.length ; i++)
+			vals[i] = Math.round(vector[i]*precision)/precision ;
+		return vals.join(",")
+	}
+
+	function generateDendogram(tree, sep, balanced, withLabel, withCentroid) {
 		var lines = new Array ;
 		if (tree.isLeaf()) {
-			var label = String(tree.label) ;
-			var len = label.length ;
-			var bar_ix = Math.floor (len / 2) ;
-			lines.push ( repeatChar (" " , bar_ix) + "|" + repeatChar (" " , len-bar_ix-1) ) ;
-			lines.push (label) ;
+			var labelstr = String(tree.label) ;
+			var centroidstr = prettyVector(tree.centroid) ;
+			var len = 1;
+			if (withCentroid) 
+				len = Math.max(centroidstr.length , len) ;
+			if (withLabel)
+				len = Math.max(labelstr.length , len) ;
+
+			lines.push (centerString ("|" , len)) ;
+			if (withCentroid) 
+				lines.push (centerString (centroidstr , len)) ;
+			if (withLabel) 
+				lines.push (centerString (labelstr , len)) ;
+
 		} else {
-			var left_dendo = generateDendogram(tree.left ,sep, balanced) ;
-			var right_dendo = generateDendogram(tree.right, sep, balanced) ;
+			var left_dendo = generateDendogram(tree.left ,sep, balanced,withLabel,withCentroid) ;
+			var right_dendo = generateDendogram(tree.right, sep, balanced,withLabel,withCentroid) ;
 			var left_bar_ix = left_dendo[0].indexOf("|") ;
 			var right_bar_ix = right_dendo[0].indexOf("|") ;
+			var centroidstr = prettyVector(tree.centroid) ;
 	
+			// calculate nb of chars of each line
+			var len = sep + right_dendo[0].length + left_dendo[0].length ;
+			if (withCentroid) 
+				len = Math.max(centroidstr.length , len) ;
+
 			// calculate position of new vertical bar
 			var bar_ix =  left_bar_ix + Math.floor(( left_dendo[0].length - (left_bar_ix) + sep + (1+right_bar_ix)) / 2) ;
 			
-			// calculate nb of chars of each line
-			var len = sep + right_dendo[0].length + left_dendo[0].length ;
-			var line ;
-		
-			// add line with the new vertical bar
-			lines.push(repeatChar (" " , bar_ix) + "|" + repeatChar (" " , len - bar_ix -1)) ;
+			// add line with the new vertical bar 
+			lines.push (putString ("|" , len , bar_ix)) ;
+			if (withCentroid) {
+				lines.push (putString (centroidstr , len , bar_ix - Math.floor (centroidstr.length / 2))) ; //centerString (centroidstr , len)) ;
+			}
 			
-			// add horizontale line to connect the vertical bars of the lower level
-			lines.push(repeatChar (" " , left_bar_ix) + repeatChar ("_" , sep + (left_dendo[0].length -left_bar_ix) + right_bar_ix+1) + repeatChar (" " , (right_dendo[0].length -right_bar_ix-1))) ;
+			// add horizontal line to connect the vertical bars of the lower level
+			var hlineLen = sep + (left_dendo[0].length -left_bar_ix) + right_bar_ix+1 ;
+			var hline = repeatChar ("_" , hlineLen) ;
+			lines.push (putString(hline, len, left_bar_ix)) ;
 	
-			// IF: the user want the tree to be balanced: all the leaves are at the same level
+			// IF: the user want the tree to be balanced: all the leaves have to be at the same level
 			// THEN: if the left and right subtrees have not the same depth, add extra vertical bars to the top of the smallest subtree
 			if (balanced &&  (left_dendo.length != right_dendo.length)) {
 				var shortest ;
@@ -74,7 +123,7 @@ var figue = function () {
 				}
 			}
 		
-			// merge the left and right subtrees
+			// merge the left and right subtrees 
 			for (var i = 0 ; i < Math.max (left_dendo.length , right_dendo.length) ; i++) {
 				var left = "" ;
 				if (i < left_dendo.length)
@@ -88,23 +137,29 @@ var figue = function () {
 				else
 					right = repeatChar (" " , right_dendo[0].length) ;
 				lines.push(left + repeatChar (" " , sep) + right) ;	
+				var l = left + repeatChar (" " , sep) + right ;
+				if (l.length != len) alert(l.length + "     -     " + len +"     -    " + l);
 			}
 		}
 		
 		return lines ;
 	}
-	
+
+
+
 	function agglomerate (labels, vectors, distance, linkage) {
 		var N = vectors.length ;
 		var dMin = new Array(N) ;
 		var cSize = new Array(N) ;
 		var matrixObj = new figue.Matrix(N,N);
 		var distMatrix = matrixObj.mtx ;
+		var clusters = new Array(N) ;
 
+		var c1, c2, c1Cluster, c2Cluster, i, j, p, root , newCentroid ;
 		// Initialize distance matrix and vector of closest clusters
-		for (var i = 0 ; i < N ; i++) {
+		for (i = 0 ; i < N ; i++) {
 			dMin[i] = 0 ;
-			for (var j = 0 ; j < N ; j++) {
+			for (j = 0 ; j < N ; j++) {
 				if (i == j)
 					distMatrix[i][j] = Infinity ;
 				else
@@ -117,33 +172,33 @@ var figue = function () {
 	
 	
 		// create leaves of the tree
-		clusters = new Array(N) ;
-		for (var i = 0 ; i < N ; i++) {
+		for (i = 0 ; i < N ; i++) {
 			clusters[i] = [] ;
-			clusters[i][0] = new Node (labels[i], null, null, 0) ;
+			clusters[i][0] = new Node (labels[i], null, null, 0, vectors[i]) ;
 			cSize[i] = 1 ;
 		}
 		
 		// Main loop
-		var root ;
-		for (var p = 0 ; p < N-1 ; p++) {
+		for (p = 0 ; p < N-1 ; p++) {
 			// find the closest pair of clusters
-			var c1 = 0 ;
-			for (var i = 0 ; i < N ; i++) {
+			c1 = 0 ;
+			for (i = 0 ; i < N ; i++) {
 				if (distMatrix[i][dMin[i]] < distMatrix[c1][dMin[c1]])
 					c1 = i ;
 			}
-			var c2 = dMin[c1] ;
+			c2 = dMin[c1] ;
 	
 			// create node to store cluster info 
 			c1Cluster = clusters[c1][0] ;
 			c2Cluster = clusters[c2][0] ;
-			newCluster = new Node (-1, c1Cluster, c2Cluster , distMatrix[c1][c2]) ;
+
+			newCentroid = calculateCentroid ( c1Cluster.size , c1Cluster.centroid , c2Cluster.size , c2Cluster.centroid ) ;
+			newCluster = new Node (-1, c1Cluster, c2Cluster , distMatrix[c1][c2] , newCentroid) ;
 			clusters[c1].splice(0,0, newCluster) ;
 			cSize[c1] += cSize[c2] ;
 		
 			// overwrite row c1 with respect to the linkage type
-			for (var j = 0 ; j < N ; j++) {
+			for (j = 0 ; j < N ; j++) {
 				if (linkage == figue.SINGLE_LINKAGE) {
 					if (distMatrix[c1][j] > distMatrix[c2][j])
 						distMatrix[j][c1] = distMatrix[c1][j] = distMatrix[c2][j] ;
@@ -156,13 +211,13 @@ var figue = function () {
 				}
 			}
 			distMatrix[c1][c1] = Infinity ;
-			
+		
 			// infinity ­out old row c2 and column c2
-			for (var i = 0 ; i < N ; i++)
+			for (i = 0 ; i < N ; i++)
 				distMatrix[i][c2] = distMatrix[c2][i] = Infinity ;
 	
 			// update dmin and replace ones that previous pointed to c2 to point to c1
-			for (var j = 0; j < N ; j++) {
+			for (j = 0; j < N ; j++) {
 				if (dMin[j] == c2)
 					dMin[j] = c1;
 				if (distMatrix[c1][j] < distMatrix[c1][dMin[c1]]) 
@@ -192,12 +247,20 @@ var figue = function () {
 		}
 	}
 
-	function Node (label,left,right,dist) 
+	function Node (label,left,right,dist, centroid) 
 	{
 		this.label = label ;
 		this.left = left ;
 		this.right = right ;
 		this.dist = dist ;
+		this.centroid = centroid ;
+		if (left == null && right == null) {
+			this.size = 1 ;
+			this.depth = 0 ;
+		} else {
+			this.size = left.size + right.size ;
+			this.depth = 1 + Math.max (left.depth , right.depth ) ;
+		}
 	}
 
 
@@ -207,6 +270,7 @@ var figue = function () {
 		COMPLETE_LINKAGE: 1,
 		AVERAGE_LINKAGE:2 ,
 		EUCLIDIAN_DISTANCE: euclidianDistance,
+		PRINT_VECTOR_VALUE_PRECISION: 2,
 
 		Matrix: Matrix,
 		Node: Node,
@@ -232,9 +296,9 @@ figue.Node.prototype.isLeaf = function()
 		return false ;
 }
 
-figue.Node.prototype.buildDendogram = function (sep, balanced)
+figue.Node.prototype.buildDendogram = function (sep, balanced,withLabel,withCentroid)
 {
-	lines = figue.generateDendogram(this, sep, balanced) ;
+	lines = figue.generateDendogram(this, sep, balanced,withLabel,withCentroid) ;
 	return lines.join ("\n") ;	
 }
 
