@@ -61,7 +61,7 @@ function load() {
   //  - the subtree depth and
   //  - the cluster size
 
-  var root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SIMPLE_LINKAGE) ;
+  var root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SINGLE_LINKAGE) ;
 
   // Produce the dendogram
   // Currently the dendogram can be customized to:
