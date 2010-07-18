@@ -112,5 +112,5 @@ This page will print:
 
 ==TODO==
   * In demo.html add function to randomly generate DS of any size
-  * Run and report results of a scalability analysis
-  * Add kmeans
+  * In wiki page, include results of a scalability analysis
+  * In figue.js add kmeans
