@@ -43,7 +43,8 @@ function load() {
       vectors[i] = [ data[i]['size'] , data[i]['revenue']] ;
   }
 
-  // Generate a hierarchical tree
+  // Generate a hierarchical tree, returns the root of the tree
+  // each node contains the centroid value, the subtree depth and the cluster size
 
   root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SIMPLE_LINKAGE) ;
 
@@ -89,8 +90,6 @@ Microsoft     Skype     Yahoo!     eBay     SAP     IBM
 }}}
 
 ==TODO==
-  * In each node calculate centroid of the cluster, tree depth and nb of items (leaves)
-  * Dendogram should display all centroids
   * In demo.html add function to randomly generate DS of any size
   * Run and report results of a scalability analysis
   * Add kmeans
