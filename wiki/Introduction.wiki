@@ -49,7 +49,7 @@ function load() {
   //  - the subtree depth and
   //  - the cluster size
 
-  root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SIMPLE_LINKAGE) ;
+  var root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SIMPLE_LINKAGE) ;
 
   // Produce the dendogram
   // Currently the dendogram can be customized to:
@@ -58,7 +58,7 @@ function load() {
   //  - be balanced (i.e. all leaves at the same level)
   //  - control the minimum spacing between nodes
 
-  dendogram = root.buildDendogram (5, true, true, true) ;
+  var dendogram = root.buildDendogram (5, true, true, true) ;
 
   // Render the dendogram in the page
   document.getElementById('mypre').innerHTML = dendogram
