@@ -53,8 +53,8 @@ function load() {
 
   // Produce the dendogram
   // Currently the dendogram can be customized to:
-  //  - display labels
-  //  - display centroids
+  //  - display data labels
+  //  - display cluster centroids
   //  - be balanced (i.e. all leaves at the same level)
   //  - control the minimum spacing between nodes
 
