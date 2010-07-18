@@ -16,7 +16,6 @@ body {
 	display: block;
 	clear: both;
 	width:800px;
-	height: 300px;
 }
 
 #output_panel {
@@ -29,30 +28,25 @@ body {
 #data_panel {
 	display:table;
 	float: left ;
-	width: 50%;
-	height: 80%;
-}
-
-#data_panel fieldset {
-	height: 90%;
+	clear: both;
+	width: 100%;
 }
 
 #data {
 	width: 100%;
-	height: 70%;
+	height: 100px;
 }
 
 #param_panel {
 	display:block;
 	float: left;
-	width: 50%;
-	height: 80%;
+	clear: both;
+	width: 100%;
+	margin-top: 10px;
 }
 
 #param_panel #params {
 	display: table-cell;
-	vertical-align:bottom;
-	height: 90%;
 }
 
 
@@ -106,10 +100,12 @@ function test() {
 	var data = parseData (document.getElementById('data').value) ;
 	var space = parseInt (document.getElementById('space').value) ;
 	var balanced = (radioValue('balanced') === 'true') ;
+	var withLabel = (radioValue('withLabel') === 'true') ;
+	var withCentroid = (radioValue('withCentroid') === 'true') ;
 	var linkage = parseInt (radioValue('linkage')) ;
 	root = figue.agglomerate(data['labels'], data['vectors'] , figue.EUCLIDIAN_DISTANCE, linkage) ;
 	document.getElementById('output_panel').style.display = 'block' ;
-	document.getElementById('text').innerHTML = root.buildDendogram(space, balanced)  ;
+	document.getElementById('text').innerHTML = root.buildDendogram(space, balanced, withLabel,withCentroid)  ;
 }
 
 function radioValue(name) {
@@ -144,29 +140,33 @@ Or use an existing dataset:
 
 <div id="param_panel">
 <fieldset id="params">
-<legend>Parameters</legend>
-<fieldset>
-<legend>Linkage method</legend>
-<input type="radio" name="linkage" value="0" checked/>Single-linkage<br />
-<input type="radio" name="linkage" value="1" />Complete-linkage<br/>
+<legend>Control panel</legend>
+Linkage method: 
+<input type="radio" name="linkage" value="0" checked/>Single-linkage
+<input type="radio" name="linkage" value="1" />Complete-linkage
 <input type="radio" name="linkage" value="2" />Average-linkage<br/>
-</fieldset>
-<fieldset>
-<legend>Balance dendogram</legend>
-<input type="radio" name="balanced" value="true" checked/>Yes<br />
+<br/>
+Show labels:
+<input type="radio" name="withLabel" value="true" checked/>Yes
+<input type="radio" name="withLabel" value="false" />No <br/>
+<br/>
+Show centroids:
+<input type="radio" name="withCentroid" value="true"/>Yes
+<input type="radio" name="withCentroid" value="false"  checked/>No<br/>
+<br/>
+Balance dendogram:
+<input type="radio" name="balanced" value="true" checked/>Yes
 <input type="radio" name="balanced" value="false" />No <br/>
-</fieldset>
-<fieldset>
-<legend>Minimum spacing between nodes in dendogram</legend>
+<br/>
+Minimum spacing between nodes:
 <select id="space">
 <option value="3">3</option>
 <option value="5">5</option>
 <option value="7" selected="selected">7</option>
 <option value="9">9</option>
 </select>
-</fieldset>
-</fieldset>
 </div>
+</fieldset>
 
 <div id="cluster_button" style="">
 <div style="display:table-row; width:100%;text-align:center;">
@@ -175,6 +175,7 @@ Or use an existing dataset:
 </div>
 </div>
 </div>
+
 
 </div>
 
