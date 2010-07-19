@@ -1,0 +1,2430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+  <Document>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/bentleigh_logo.jpg' alt='Bentleigh Secondary College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Bentleigh Secondary College&lt;/h2&gt;
+						&lt;h3&gt;Vivien Street, East Bentleigh, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 27 May 2007&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 14,806kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/bentleigh.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.05947,-37.927133,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Waikerielogo.jpg' alt='Waikerie Lutheran Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Waikerie Lutheran Primary School&lt;/h2&gt;
+						&lt;h3&gt;McCutcheon Street, Waikerie, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 13 February 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 8,699kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/waikerielutheran.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>139.989598,-34.185182,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Northgatelogo.jpg' alt='Northgate State School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Northgate State School&lt;/h2&gt;
+						&lt;h3&gt;128 Amelia St, Nundah, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 11 December 2008&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 2kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,900kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/northgateqld.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>153.070908,-27.398035,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/2007_ashwood_logo2.jpg' alt='Ashwood College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Ashwood College&lt;/h2&gt;
+						&lt;h3&gt;Vannam Drive , Ashwood , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 19 March 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 6,984kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/ashwoodsc.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.102894,-37.863154,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Greenhills logo.jpg' alt='Greenhills Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Greenhills Primary School&lt;/h2&gt;
+						&lt;h3&gt;Mine Street, Greensborough, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 20 March 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 8,500kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/greenhills.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.118926,-37.692826,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/scslogoweb.jpg' alt='Sherbrooke Community School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Sherbrooke Community School&lt;/h2&gt;
+						&lt;h3&gt;311 Mt Dandenong Tourist Road, Sassafras, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 23 March 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 7,149kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/sherbrooke.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.349499,-37.868596,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Harrietville logo.jpg' alt='Harrietville Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Harrietville Primary School&lt;/h2&gt;
+						&lt;h3&gt;165 Great Alpine Road, Harrietville, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 25 March 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 6,306kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/harrietville.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>147.0646402,-36.8875611,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;St Bernadettes Primary School&lt;/h2&gt;
+						&lt;h3&gt;1264 Mountain Highway, The Basin, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 20 April 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,408kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/stbernadette.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.311514,-37.853128,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Shelford Logo.JPG' alt='Shelford Girls Grammar' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Shelford Girls Grammar&lt;/h2&gt;
+						&lt;h3&gt;3 Hood Street, Caulfield, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 24 April 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 9,126kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/shelford.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.011335,-37.877953,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Mansfield PS logo.jpg' alt='Mansfield Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Mansfield Primary School&lt;/h2&gt;
+						&lt;h3&gt;Apollo Street, Mansfield, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 20 May 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 5,507kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/mansfieldps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>146.084793,-37.054985,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Bundoora logo.jpg' alt='Bundoora Secondary College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Bundoora Secondary College&lt;/h2&gt;
+						&lt;h3&gt;Balmoral Ave, Bundoora, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 04 May 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 4,947kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/bundoora.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.063985,-37.707092,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/St thereses logo.jpg' alt='St Therese's School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;St Therese's School&lt;/h2&gt;
+						&lt;h3&gt;31 Edward St, Essendon, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 07 May 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 2,289kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/St_Thereses.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.909197,-37.750722,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/FC logo.jpg' alt='Ferny Creek Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Ferny Creek Primary School&lt;/h2&gt;
+						&lt;h3&gt;School Rd , Ferny Creek, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 05 June 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 4,627kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/fernycreek.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.333511,-37.883713,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/school logo - small.jpg' alt='Camp Hill Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Camp Hill Primary School&lt;/h2&gt;
+						&lt;h3&gt;Gaol Road, Bendigo, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 19 June 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 6,101kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/camphillps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.277491,-36.755532,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/SH logo.jpg' alt='Specimen Hill Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Specimen Hill Primary School&lt;/h2&gt;
+						&lt;h3&gt;Inglewood Street, Golden Square, Bendigo, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 19 June 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 8,761kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/specimenhillps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.246884,-36.762926,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/MC logo FA pms outlines PC1.jpg' alt='Mater Christi College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Mater Christi College&lt;/h2&gt;
+						&lt;h3&gt;28 Bayview Road, Belgrave, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 25 June 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 8,615kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/materchristi.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.3594731,-37.9103101,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Westgarth logo.jpg' alt='Westgarth Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Westgarth Primary School&lt;/h2&gt;
+						&lt;h3&gt;Brooke Street, Northcote, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 29 June 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 5,187kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/westgarthps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.004377,-37.776516,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Lysterfield logo.jpg' alt='Lysterfield Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Lysterfield Primary School&lt;/h2&gt;
+						&lt;h3&gt;Bellfield Drive, Lysterfield, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 03 July 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,401kWh this month&lt;br /&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/lysterfieldps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.27376,-37.913565,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Heathmont East logo.jpg' alt='Heathmont East Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Heathmont East Primary School&lt;/h2&gt;
+						&lt;h3&gt;Louis Street, Heathmont, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 07 July 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 4,813kWh this month&lt;br /&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/heathmonteastps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.258529,-37.830452,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/MPS Logo.jpg' alt='Mentone Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Mentone Primary School&lt;/h2&gt;
+						&lt;h3&gt;6 Childers St., Mentone, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 14 July 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 6,209kWh this month&lt;br /&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/mentoneps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.067835,-37.982908,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Boneo logo.jpg' alt='Boneo Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Boneo Primary School&lt;/h2&gt;
+						&lt;h3&gt;582 Boneo Road, Boneo, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 16 July 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 7,266kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/boneops.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.887158,-38.41221,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/School logo.jpg' alt='Good Samaritan Catholic Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Good Samaritan Catholic Primary School&lt;/h2&gt;
+						&lt;h3&gt;1-29 Southern Cross Drive, Roxburgh Park, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 01 July 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 4,052kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/goodsamaritanps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.9354349,-37.6215597,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Scoresby PS logo.gif' alt='Scoresby Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Scoresby Primary School&lt;/h2&gt;
+						&lt;h3&gt;11 Ingrid Street, Scoresby, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 13 August 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 6,246kWh this month&lt;br /&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/scoresbyps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.2273872,-37.8944022,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/SMALLstrathcorp.JPG' alt='Strathcona Baptist Girls Grammar School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Strathcona Baptist Girls Grammar School&lt;/h2&gt;
+						&lt;h3&gt;34 Scott Street, Canterbury , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 25 August 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 2kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 2,607kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/strathcona.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.080366,-37.829176,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/SMGS-Steel-Logo-Stack.jpg' alt='St Michael's Grammar School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;St Michael's Grammar School&lt;/h2&gt;
+						&lt;h3&gt;25 Chapel Street, St. Kilda, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 25 August 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 10kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 10,285kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/stmichaels.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.990249,-37.859805,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Healesville.jpg' alt='Healesville Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Healesville Primary School&lt;/h2&gt;
+						&lt;h3&gt;2 View Street, Healesville, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 03 September 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 6,240kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/healesvilleps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.516658,-37.656669,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Mordialloc PS logo.jpg' alt='Mordialloc Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Mordialloc Primary School&lt;/h2&gt;
+						&lt;h3&gt;58 Barkley Street, Mordialloc, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 04 September 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 2,938kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/mordiallocps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.086849,-38.007154,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Noble ParklogoRedBlk.tif' alt='Noble Park Secondary College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Noble Park Secondary College&lt;/h2&gt;
+						&lt;h3&gt;3 Callaghan Street, Noble Park, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 04 September 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 5,595kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/nobleparksc.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.182704,-37.969918,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/WDSS logo.jpg' alt='Wangaratta District Specialist School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Wangaratta District Specialist School&lt;/h2&gt;
+						&lt;h3&gt;129 Appin Street, Wangaratta, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 08 September 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 2kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 2,775kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/wangarattadss.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>146.300182,-36.345372,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/scouts australia COLOUR-high res.jpg' alt='Scouts 1st Baden Powell Park' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Scouts 1st Baden Powell Park&lt;/h2&gt;
+						&lt;h3&gt;Humphries Road, Frankston, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 10 September 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 1kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,226kWh this month&lt;br /&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/1stbadenpowell.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.1151565,-38.18267,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/HarstonPS logo.jpg' alt='Harston Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Harston Primary School&lt;/h2&gt;
+						&lt;h3&gt;155 Harston Rd , Harston, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 16 September 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,683kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/harstonps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.141729,-36.469699,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;King's Christian College&lt;/h2&gt;
+						&lt;h3&gt;68 Gemvale Road, Reedy Creek, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 25 September 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 9kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 5,575kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/kingscc.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>153.3963456,-28.0965571,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/whittlesea COLOUR logo.png' alt='Whittlesea Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Whittlesea Primary School&lt;/h2&gt;
+						&lt;h3&gt;2435 Plenty Road, Whittlesea, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 25 September 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 6,181kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/whittleseaps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.114201,-37.514984,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Merrijig Primary School&lt;/h2&gt;
+						&lt;h3&gt;Mount Buller Road, Merrijig, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 25 September 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,896kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/merrijigps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>146.263134,-37.103406,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Oatlands Logo.jpg' alt='Oatlands Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Oatlands Primary School&lt;/h2&gt;
+						&lt;h3&gt;Kurrajong Road, Narre Warren, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 05 October 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,627kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/oatlandsps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.316034,-38.008742,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Chelsea.bmp' alt='Chelsea Heights Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Chelsea Heights Primary School&lt;/h2&gt;
+						&lt;h3&gt;194 Thames Prom, Chelsea Heights, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 05 October 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 7kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,019kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/chelseaheightsps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.137322,-38.045155,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/MPS Logosmall.jpg' alt='Monmia Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Monmia Primary School&lt;/h2&gt;
+						&lt;h3&gt;91-99 Willys Ave , KEILOR DOWNS , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 09 October 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,803kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/monmiaps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.792117,-37.717719,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/full coloursmall.jpg' alt='Bracknell Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Bracknell Primary School&lt;/h2&gt;
+						&lt;h3&gt;53 Jane St , Bracknell, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 16 October 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,121kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/bracknellps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>146.933587,-41.652437,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Kangaroo Flat Logo.jpg' alt='Kangaroo Flat Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Kangaroo Flat Primary School&lt;/h2&gt;
+						&lt;h3&gt;26-32 Lockwood Rd, Kangaroo Flat, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 16 October 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 6,779kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/kangarooflatps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.240078,-36.796033,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/bwlogosmall.tif' alt='Grovedale College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Grovedale College&lt;/h2&gt;
+						&lt;h3&gt;Wingarra Drive , GROVEDALE , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 16 October 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,480kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/grovedaleps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.323776,-38.211723,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Birralee Logo.jpg' alt='Birralee Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Birralee Primary School&lt;/h2&gt;
+						&lt;h3&gt;26 Heyington Ave, Doncaster, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 11 November 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,512kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/birraleeps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.1131737,-37.7933977,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Mackillop Logo.jpg' alt='Mary Mackillop Catholic Regional College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Mary Mackillop Catholic Regional College&lt;/h2&gt;
+						&lt;h3&gt;Horn Street, Leongatha, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 01 October 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,719kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Mackillop.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.957065,-38.476661,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Woodcroft Logo.jpg' alt='Woodcroft College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Woodcroft College&lt;/h2&gt;
+						&lt;h3&gt;Bairns Road , Morphett Vale , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 01 November 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 9kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,221kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Woodcroft.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>138.523205,-35.121055,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Fremantle Logo.jpg' alt='Fremantle Leisure Centre' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Fremantle Leisure Centre&lt;/h2&gt;
+						&lt;h3&gt;Shuffrey Street, Fremantle , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 25 September 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 30kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 23,140kWh this month&lt;br /&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Fremantle.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>115.752662,-32.049091,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Kialla Central Logo.jpg' alt='Kialla Central PS' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Kialla Central PS&lt;/h2&gt;
+						&lt;h3&gt;Central Kialla Road, Kialla, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 20 November 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 2kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 2,048kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Kiallacentralps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.431814,-36.469681,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Clonard Logo.jpg' alt='Clonard College ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Clonard College &lt;/h2&gt;
+						&lt;h3&gt;225 Church Street, Geelong West, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 01 November 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 2,876kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Colonard.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.3309827,-38.129741,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Boronia Logo.jpg' alt='Boronia Height Primary School ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Boronia Height Primary School &lt;/h2&gt;
+						&lt;h3&gt;Landscape Drive, Boronia , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 02 December 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 8kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/boroniaheightsps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.29238,-37.844768,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Sunnycliff Logo  image.jpg' alt='Sunnycliffs Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Sunnycliffs Primary School&lt;/h2&gt;
+						&lt;h3&gt;Calder Highway, Red Cliffs, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 07 December 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,198kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/sunnycliffsps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>142.1864695,-34.318509,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Neerim Image 3jpg.jpg' alt='Neerim District Secondary College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Neerim District Secondary College&lt;/h2&gt;
+						&lt;h3&gt;Neerim Road East, Neerim South, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 09 December 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,072kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Neerim.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.97488,-38.009669,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Croydon Logo.jpg' alt='Croydon West Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Croydon West Primary School&lt;/h2&gt;
+						&lt;h3&gt;Hinkley Avenue , Croydon, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 05 November 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 3,709kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/croydonwest.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.264934,-37.794182,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Lighthouse Logo.jpg' alt='Lighthouse Christian School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Lighthouse Christian School&lt;/h2&gt;
+						&lt;h3&gt;480 Norman Road , Rockhampton, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 20 November 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 2,335kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Lighthouse.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>150.538162,-23.33828,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Logojpg.jpg' alt='Camden High School ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Camden High School &lt;/h2&gt;
+						&lt;h3&gt;300 Cawdor Road , Camden , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 19 January 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 995kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Camdenhs.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>150.675501,-34.079493,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/2scouts australia COLOUR-high res.jpg' alt='Gatton Scout Group' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Gatton Scout Group&lt;/h2&gt;
+						&lt;h3&gt;Woodlands Street , Gatton, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 18 January 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 2kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; kWh this month&lt;br /&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Scoutsgatton.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>152.282287,-27.57433,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/3scouts australia COLOUR-high res.jpg' alt='Silkstone Scouts Group' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Silkstone Scouts Group&lt;/h2&gt;
+						&lt;h3&gt;Cambridge Street, Silkstone , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 18 January 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 2kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; kWh this month&lt;br /&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Scoutssilkstone.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>152.783717,-27.622858,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/4scouts australia COLOUR-high res.jpg' alt='Karana Downs Scout Group' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Karana Downs Scout Group&lt;/h2&gt;
+						&lt;h3&gt;Tanderra Way, Karana Downs, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 18 January 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 2kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,513kWh this month&lt;br /&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Scoutskaranadowns.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>152.826583,-27.539666,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Kempton Logo.jpg' alt='Kempton Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Kempton Primary School&lt;/h2&gt;
+						&lt;h3&gt;Old Hunting Ground Road , Kempton, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 12 February 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 812kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/kemptonps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>147.1994,-42.53199,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Ridgley Logo.jpg' alt='Ridgley Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Ridgley Primary School&lt;/h2&gt;
+						&lt;h3&gt;904 Ridgley Highway, Ridgley, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 13 February 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 610kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/ridgleyps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.837772,-41.139978,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Mole Creek Image 3.jpg' alt='Mole Creek Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Mole Creek Primary School&lt;/h2&gt;
+						&lt;h3&gt;Caveside Road , Mole Creek, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 16 February 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,518kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/molecreekps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>146.403175,-41.577059,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Golden square Logo.jpg' alt='Golden Square Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Golden Square Primary School&lt;/h2&gt;
+						&lt;h3&gt;6 Laurel Street , Golden Square , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 17 February 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,285kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/goldensquareps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.26241,-36.772654,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Toolernvale Logo.jpg' alt='Toolernvale PS ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Toolernvale PS &lt;/h2&gt;
+						&lt;h3&gt;361 Creamery Road , Toolern Vale , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 18 February 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,748kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Toolernvaleps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.594772,-37.606709,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Lindenow Logo.jpg' alt='Lindenow South Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Lindenow South Primary School&lt;/h2&gt;
+						&lt;h3&gt;607 Lindenow Glendale Road, Lindenow , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 05 March 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 2,032kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/lindenowsouthps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>147.458491,-37.800359,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/logo colour.GIF' alt='Nepean School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Nepean School&lt;/h2&gt;
+						&lt;h3&gt;33 Klauer Street, Seaford, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 11 March 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,337kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/nepeanschool.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.141452,-38.119354,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/2logo.jpg' alt='Mount Waverley North Primary ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Mount Waverley North Primary &lt;/h2&gt;
+						&lt;h3&gt;1 Marcus Ave , Mount Waverley , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 17 March 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 2kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 529kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/mtwaverleynorthps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.142794,-37.868302,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Launceston Prep Logo.jpg' alt='The Launceston Preparatory School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;The Launceston Preparatory School&lt;/h2&gt;
+						&lt;h3&gt;117 Elphin Road , Newstead, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 18 March 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 208kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/launcestonprep.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>147.158385,-41.437323,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Big Hill Primary Logo.jpg' alt='Big Hill Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Big Hill Primary School&lt;/h2&gt;
+						&lt;h3&gt;5644 Calder Highway, Big Hill , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 26 March 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,578kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/bighillps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.24096,-36.830721,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Hughesdale Primary logo.jpg' alt='Hughesdale Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Hughesdale Primary School&lt;/h2&gt;
+						&lt;h3&gt;Brine Street , Hughesdale , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 29 March 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,296kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/hughesdaleps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.07696,-37.90848,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Illawarra Logo.jpg' alt='Illawarra Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Illawarra Primary School&lt;/h2&gt;
+						&lt;h3&gt;Tinderbox Road, Blackmans Bay , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 31 March 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 924kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/illawarraps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>147.322062,-43.0161655,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Bagdad Primary School&lt;/h2&gt;
+						&lt;h3&gt;School Road , Bagdad, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 11 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 354kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/bagdadps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>147.222414,-42.626383,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Traralgon Kosciuszko Street Primary School&lt;/h2&gt;
+						&lt;h3&gt;Kosciuszko Street, Traralgon, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 31 March 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 268kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Kosciuszkops.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>146.538373,-38.193322,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Alphington Primary School &lt;/h2&gt;
+						&lt;h3&gt;Yarralea Street, Alphington, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 31 March 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/alphingtonps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.03208,-37.781626,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Latrobe High School &lt;/h2&gt;
+						&lt;h3&gt;Percival Street, Latrobe , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 31 March 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/latrobehs.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>146.421912,-41.239057,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Sale College logo.jpg' alt='Sale College Macalister Campus ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Sale College Macalister Campus &lt;/h2&gt;
+						&lt;h3&gt;Macalister Street, Sale , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 10 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,355kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/salecollege.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>147.070927,-38.109268,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Wedge Park Primary Logo.jpg' alt='Wedge Park Primary School ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Wedge Park Primary School &lt;/h2&gt;
+						&lt;h3&gt;Cambrian Way , Melton West , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 15 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 625kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/wedgeparkps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.555347,-37.677053,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Gleeson Logo.png' alt='Gleeson College ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Gleeson College &lt;/h2&gt;
+						&lt;h3&gt;40 Surrey Farm Drive , Golden Grove , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 09 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 60kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/gleesoncollege.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>138.694461,-34.796328,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/St Michaels  ACT logo.jpg' alt='St Michael's Primary' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;St Michael's Primary&lt;/h2&gt;
+						&lt;h3&gt;Tyrell Circuit , Kaleen, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 12 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/stmichealsps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>149.108281,-35.223636,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/St Euphemia Logo.jpg' alt='St Euphemia College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;St Euphemia College&lt;/h2&gt;
+						&lt;h3&gt;202 Stacey Street , Bankstown , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 20 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Steuphemia.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>151.0403829,-33.9185587,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Hampton Park Secondary College&lt;/h2&gt;
+						&lt;h3&gt;Fordholm Road , Hampton Park , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 13 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 492kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/hamptonpark.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.258959,-38.034606,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Kennington Primary School&lt;/h2&gt;
+						&lt;h3&gt;145 Cook Street, Strathdale , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 14 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,500kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/kenningtonps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.289844,-36.785284,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Rye Primary School &lt;/h2&gt;
+						&lt;h3&gt;Lyons Street, Rye , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 27 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,204kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/ryeps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.823941,-38.374733,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Sunbury and Macedon Ranges Specialist School&lt;/h2&gt;
+						&lt;h3&gt;Circular Drive, Sunbury , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 27 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 301kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/smrss.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.729764,-37.595782,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/2School Logo.jpg' alt='St Joseph's College ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;St Joseph's College &lt;/h2&gt;
+						&lt;h3&gt;54 James Street, Toowoomba , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 28 April 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,499kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/stjosephs.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>151.969757,-27.571664,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Knox Logo .jpg' alt='Knox Civic Centre' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Knox Civic Centre&lt;/h2&gt;
+						&lt;h3&gt;511 Burwood Highway , Wantirna South , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 21 May 2008&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 867kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/knoxcivic.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.245078,-37.871901,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Lemnos Logo.jpg' alt='Lemnos Primary School ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Lemnos Primary School &lt;/h2&gt;
+						&lt;h3&gt;74 Lemnos North Road , Lemnos, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 03 May 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 1,034kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/lemnosps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.462246,-36.357992,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/St Peters East Keilor Logo.jpg' alt='St Peter's Keilor East ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;St Peter's Keilor East &lt;/h2&gt;
+						&lt;h3&gt;2a Parkside Avenue , Keilor East , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 01 May 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 863kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Stpeters.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.858791,-37.744399,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Stawell Logo.jpg' alt='Stawell Secondary College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Stawell Secondary College&lt;/h2&gt;
+						&lt;h3&gt;Patrick Street, Stawell , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 05 May 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 744kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/stawellsc.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>142.787456,-37.060077,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Castlemaine Logo.jpg' alt='Castlemaine Secondary College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Castlemaine Secondary College&lt;/h2&gt;
+						&lt;h3&gt;Etty Street, Castlemaine , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 10 May 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 662kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/castlemainesc.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.212089,-37.077499,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/st john the baptist logo.jpg' alt='St John the Baptist' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;St John the Baptist&lt;/h2&gt;
+						&lt;h3&gt;15 Hickey Avenue, Gladstone , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 12 May 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/stjohnthebaptist.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>151.218155,-23.875547,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/St annes.jpg' alt='St Annes Primary Sunbury' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;St Annes Primary Sunbury&lt;/h2&gt;
+						&lt;h3&gt;16 Stewarts Lane, Sunbury , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 31 May 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 322kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/stannesps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.717462,-37.567763,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/cowes logo.jpg' alt='Cowes Primary School ' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Cowes Primary School &lt;/h2&gt;
+						&lt;h3&gt;Settlement Road, Cowes, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 07 June 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 6kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Sustainability Victoria&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/cowesps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.2276715,-38.4561485,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Gembrook Logo.jpg' alt='Gembrook Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Gembrook Primary School&lt;/h2&gt;
+						&lt;h3&gt;48 Main Street, Gembrookl, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 07 June 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 2kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 108kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/gembrookps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.5450677,-37.9517319,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Southwood Boys School&lt;/h2&gt;
+						&lt;h3&gt;90 Alexandra Road , Ringwood , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 14 May 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 461kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Southwood.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.254642,-37.817222,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/The Lakes Logo.jpg' alt='The Lakes South Morang' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;The Lakes South Morang&lt;/h2&gt;
+						&lt;h3&gt;80 Jardier Terrace, South Morang , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 10 June 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 57kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Thelakes.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>145.075458,-37.635019,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/St Frances Hughenden.jpg' alt='St Francis' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;St Francis&lt;/h2&gt;
+						&lt;h3&gt;8 Flinders Street, Hughenden, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 18 June 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 3kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 287kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/St_Francis.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.202126,-20.845133,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/Bellbridge Logo .jpg' alt='Bellbridge Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Bellbridge Primary School&lt;/h2&gt;
+						&lt;h3&gt;Bellbridge Drive, Hoppers Crossing, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 01 December 2009&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 4kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 54kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/bellbridgeps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>144.71045,-37.8684,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/PSPS B&amp;W Logo.jpg' alt='Pleasant Street Primary School' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Pleasant Street Primary School&lt;/h2&gt;
+						&lt;h3&gt;Pleasant Street , Ballarat , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 22 June 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 2kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 111kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/pleasantstreetps.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>143.8383,-37.565121,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						&lt;img src='http://www.sunskool.com/Uploads/SchoolImages/MSClogo.jpg' alt='Mansfield Secondary College' width='80' height='80' /&gt;
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Mansfield Secondary College&lt;/h2&gt;
+						&lt;h3&gt;15 View Street , Mansfield , Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 12 July 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 79kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/mansfieldsc.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>146.089646,-37.0624263,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://www.sunskool.com/Common/images/icons/ico_sun.png</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <description>&lt;!-- Google Maps pulls out class and id attributes so we are using inline styles --&gt;
+					&lt;div style='float: left; display: inline; width: 80px;'&gt;
+						
+					&lt;/div&gt;
+					&lt;div style='margin-left: 100px;'&gt;
+						&lt;h2&gt;Blackheath &amp; Thornburgh College&lt;/h2&gt;
+						&lt;h3&gt;55 King Street, Charters Towers, Australia&lt;/h3&gt;
+						&lt;p&gt;
+							&lt;strong&gt;Date Installed:&lt;/strong&gt; 12 July 2010&lt;br /&gt;
+							&lt;strong&gt;Capacity:&lt;/strong&gt; 5kW&lt;br /&gt;
+							&lt;strong&gt;Generated:&lt;/strong&gt; 59kWh this month&lt;br /&gt;&lt;strong&gt;Sponsored:&lt;/strong&gt; Australian Government&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;&lt;a href='http://www.sunskool.com/school/Blackheath.aspx' style='color: #106997;'&gt;View Dashboard&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+					&lt;/div&gt;</description>
+      <Point>
+        <coordinates>146.2566033,-20.0703885,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
