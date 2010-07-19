@@ -1,0 +1,119 @@
+body { font-family: sans-serif arial;  font-size: 80%;}
+
+#original_dataset {
+	width:100%;
+	text-align:center;
+}
+
+#map_options {
+	width:100%;
+	text-align:center;
+}
+#map_options td {
+	padding: 0 10px; 	
+}
+
+#map_area {
+	display:block;
+	height: 800px;
+	
+}
+
+.map-small{
+	width: 400px; 
+	height: 300px; 
+	margin: 20px auto;
+	clear: both;
+}
+
+.map-medium{
+	width: 700px; 
+	height: 550px; 
+	margin: 20px auto;
+	clear: both;
+}
+
+.map-large{
+	height: 100%;
+	width: 100%;
+}
+
+#map_selection{
+	margin: 10px auto;
+	text-align:center;
+	display:block;
+}
+
+#map_selector{
+	margin: 0px auto;
+	display: inline;
+	text-align:center;
+}
+#left-pane{
+	display:block;
+	float:left;
+	background: gray;
+	width:30%;
+	height:100%;
+}
+
+
+
+#searchbox {
+	display:block ; 
+	background:yellow;
+	margin: 10px;
+	padding: 5px;
+
+}
+
+#navigation-help {
+	display:block;
+	margin: 0 auto;
+	background:red;
+	margin: 10px;
+	padding: 5px;
+	color:white;
+}
+
+#central-pane{
+	display:block;
+	float:left;
+	background: pink;
+	width:70%;
+	height:100%;
+}
+
+
+
+#pleasewaitScreen{
+	position:absolute;
+	z-index:5;
+	visibility:hidden;
+}
+
+#change-view {
+	visibility:hidden;
+	display:block;
+	padding: 3px 3px 3px 3px;
+	margin:2px auto;
+	text-align:center;
+	width:200px;
+}
+
+#footer {
+	margin:90px 0px auto auto;
+	font-size:80%;
+	text-align:center;
+}
+
+#task-button {
+	display:block;
+	text-align:center;
+	margin: 0 auto;
+}
+
+
+#controls {
+	display: none;
+}
