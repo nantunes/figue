@@ -19,6 +19,24 @@ var figue = function () {
 		return d ;
 	}
 
+	function manhattanDistance (vec1 , vec2) {
+		var N = vec1.length ;
+		var d = 0 ;
+		for (var i = 0 ; i < N ; i++)
+			d += Math.abs (vec1[i] - vec2[i])
+		return d ;
+	}
+
+	function maxDistance (vec1 , vec2) {
+		var N = vec1.length ;
+		var d = 0 ;
+		for (var i = 0 ; i < N ; i++)
+			d = Math.max (d , Math.abs (vec1[i] - vec2[i])) ;
+		return d ;
+	}
+
+
+
 	function repeatChar(c, n) {
 		var str = "";
 		for (var i = 0 ; i < n ; i++)
@@ -167,6 +185,14 @@ var figue = function () {
 		var clusters = new Array(N) ;
 
 		var c1, c2, c1Cluster, c2Cluster, i, j, p, root , newCentroid ;
+
+		if (distance == figue.EUCLIDIAN_DISTANCE)
+			distance = euclidianDistance ;
+		else if (distance == figue.MANHATTAN_DISTANCE)
+			distance = manhattanDistance ;
+		else if (distance == figue.MAX_DISTANCE)
+			distance = maxDistance ;
+
 		// Initialize distance matrix and vector of closest clusters
 		for (i = 0 ; i < N ; i++) {
 			dMin[i] = 0 ;
@@ -180,7 +206,6 @@ var figue = function () {
 					dMin[i] = j ;
 			}
 		}
-	
 	
 		// create leaves of the tree
 		for (i = 0 ; i < N ; i++) {
@@ -280,7 +305,9 @@ var figue = function () {
 		SINGLE_LINKAGE: 0,
 		COMPLETE_LINKAGE: 1,
 		AVERAGE_LINKAGE:2 ,
-		EUCLIDIAN_DISTANCE: euclidianDistance,
+		EUCLIDIAN_DISTANCE: 0,
+		MANHATTAN_DISTANCE: 1,
+		MAX_DISTANCE: 2,
 		PRINT_VECTOR_VALUE_PRECISION: 2,
 
 		Matrix: Matrix,
