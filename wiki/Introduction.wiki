@@ -61,16 +61,28 @@ function load() {
   //  - the subtree depth and
   //  - the cluster size
 
+
+  // Generate a hierarchical tree
+  // Possible distance functions are:
+  //  - figue.EUCLIDIAN_DISTANCE
+  //  - figue.MANHATTAN_DISTANCE
+  //  - figue.MAX_DISTANCE
+  // Possible linkage functions are:
+  //  - figue.SINGLE_LINKAGE
+  //  - figue.MAXIMUM_LINKAGE
+  //  - figue.AVERAGE_LINKAGE
+
   var root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SINGLE_LINKAGE) ;
 
   // Produce the dendogram
   // Currently the dendogram can be customized to:
   //  - display data labels
   //  - display cluster centroids
+  //  - display distance centroids
   //  - be balanced (i.e. all leaves at the same level)
   //  - control the minimum spacing between nodes
 
-  var dendogram = root.buildDendogram (5, true, true, true) ;
+  var dendogram = root.buildDendogram (5, true, true, true, true) ;
 
   // Render the dendogram in the page
   document.getElementById('mypre').innerHTML = dendogram
