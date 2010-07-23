@@ -104,7 +104,8 @@ function test() {
 	var withCentroid = (radioValue('withCentroid') === 'true') ;
 	var withDistance = (radioValue('withDistance') === 'true') ;
 	var linkage = parseInt (radioValue('linkage')) ;
-	root = figue.agglomerate(data['labels'], data['vectors'] , figue.EUCLIDIAN_DISTANCE, linkage) ;
+	var distance = parseInt (radioValue('distance')) ;
+	root = figue.agglomerate(data['labels'], data['vectors'] , distance, linkage) ;
 	document.getElementById('output_panel').style.display = 'block' ;
 	document.getElementById('text').innerHTML = root.buildDendogram(space, balanced, withLabel,withCentroid,withDistance)  ;
 }
@@ -146,6 +147,11 @@ Linkage method:
 <input type="radio" name="linkage" value="0" checked/>Single-linkage
 <input type="radio" name="linkage" value="1" />Complete-linkage
 <input type="radio" name="linkage" value="2" />Average-linkage<br/>
+<br/>
+Distance: 
+<input type="radio" name="distance" value="0" checked/>Euclidian
+<input type="radio" name="distance" value="1" />Manhattan
+<input type="radio" name="distance" value="2" />Maximum<br/>
 <br/>
 Show labels:
 <input type="radio" name="withLabel" value="true" checked/>Yes
