@@ -55,19 +55,21 @@ function load() {
       vectors[i] = [ data[i]['size'] , data[i]['revenue']] ;
   }
 
-  // Generate a hierarchical tree, returns the root of the tree
-  // each node contains:
-  //  - the centroid value, 
-  //  - the subtree depth and
-  //  - the cluster size
+  // Generate a hierarchical tree, 
 
 
   // Generate a hierarchical tree
-  // Possible distance functions are:
+  // Return:
+  //  - root of the tree, in which each node contains:
+  //    - the left and right subtrees (if any),
+  //    - the centroid value, 
+  //    - the subtree depth and
+  //    - the cluster size
+  // Currently supported distance functions are:
   //  - figue.EUCLIDIAN_DISTANCE
   //  - figue.MANHATTAN_DISTANCE
   //  - figue.MAX_DISTANCE
-  // Possible linkage functions are:
+  // Currently supported linkage functions are:
   //  - figue.SINGLE_LINKAGE
   //  - figue.MAXIMUM_LINKAGE
   //  - figue.AVERAGE_LINKAGE
