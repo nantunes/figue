@@ -76,11 +76,11 @@ function load() {
 
   // Produce the dendogram
   // Currently the dendogram can be customized to:
+  //  - control the minimum spacing between nodes
+  //  - be balanced (i.e. all leaves at the same level)
   //  - display data labels
   //  - display cluster centroids
   //  - display distance centroids
-  //  - be balanced (i.e. all leaves at the same level)
-  //  - control the minimum spacing between nodes
 
   var dendogram = root.buildDendogram (5, true, true, true, true) ;
 
