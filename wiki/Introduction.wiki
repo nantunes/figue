@@ -82,7 +82,7 @@ function load() {
   //  - display cluster centroids
   //  - display distance centroids
 
-  var dendogram = root.buildDendogram (5, true, true, true, true) ;
+  var dendogram = root.buildDendogram (5, true, true, true, false) ;
 
   // Render the dendogram in the page
   document.getElementById('mypre').innerHTML = dendogram
