@@ -102,10 +102,11 @@ function test() {
 	var balanced = (radioValue('balanced') === 'true') ;
 	var withLabel = (radioValue('withLabel') === 'true') ;
 	var withCentroid = (radioValue('withCentroid') === 'true') ;
+	var withDistance = (radioValue('withDistance') === 'true') ;
 	var linkage = parseInt (radioValue('linkage')) ;
 	root = figue.agglomerate(data['labels'], data['vectors'] , figue.EUCLIDIAN_DISTANCE, linkage) ;
 	document.getElementById('output_panel').style.display = 'block' ;
-	document.getElementById('text').innerHTML = root.buildDendogram(space, balanced, withLabel,withCentroid)  ;
+	document.getElementById('text').innerHTML = root.buildDendogram(space, balanced, withLabel,withCentroid,withDistance)  ;
 }
 
 function radioValue(name) {
@@ -153,6 +154,10 @@ Show labels:
 Show centroids:
 <input type="radio" name="withCentroid" value="true"/>Yes
 <input type="radio" name="withCentroid" value="false"  checked/>No<br/>
+<br/>
+Show distance:
+<input type="radio" name="withDistance" value="true"/>Yes
+<input type="radio" name="withDistance" value="false"  checked/>No<br/>
 <br/>
 Balance dendogram:
 <input type="radio" name="balanced" value="true" checked/>Yes

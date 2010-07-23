@@ -60,11 +60,16 @@ var figue = function () {
 		return vals.join(",")
 	}
 
-	function generateDendogram(tree, sep, balanced, withLabel, withCentroid) {
+	function prettyValue(value) {
+		var precision = Math.pow(10, figue.PRINT_VECTOR_VALUE_PRECISION) ; 
+		return String (Math.round(value*precision)/precision) ;
+	}
+
+	function generateDendogram(tree, sep, balanced, withLabel, withCentroid, withDistance) {
 		var lines = new Array ;
+		var centroidstr = prettyVector(tree.centroid) ;
 		if (tree.isLeaf()) {
 			var labelstr = String(tree.label) ;
-			var centroidstr = prettyVector(tree.centroid) ;
 			var len = 1;
 			if (withCentroid) 
 				len = Math.max(centroidstr.length , len) ;
@@ -78,16 +83,19 @@ var figue = function () {
 				lines.push (centerString (labelstr , len)) ;
 
 		} else {
-			var left_dendo = generateDendogram(tree.left ,sep, balanced,withLabel,withCentroid) ;
-			var right_dendo = generateDendogram(tree.right, sep, balanced,withLabel,withCentroid) ;
+			var distancestr = prettyValue(tree.dist) ;
+			var left_dendo = generateDendogram(tree.left ,sep, balanced,withLabel,withCentroid, withDistance) ;
+			var right_dendo = generateDendogram(tree.right, sep, balanced,withLabel,withCentroid,withDistance) ;
 			var left_bar_ix = left_dendo[0].indexOf("|") ;
 			var right_bar_ix = right_dendo[0].indexOf("|") ;
-			var centroidstr = prettyVector(tree.centroid) ;
 	
 			// calculate nb of chars of each line
 			var len = sep + right_dendo[0].length + left_dendo[0].length ;
 			if (withCentroid) 
 				len = Math.max(centroidstr.length , len) ;
+			if (withDistance) 
+				len = Math.max(distancestr.length , len) ;
+
 
 			// calculate position of new vertical bar
 			var bar_ix =  left_bar_ix + Math.floor(( left_dendo[0].length - (left_bar_ix) + sep + (1+right_bar_ix)) / 2) ;
@@ -97,7 +105,10 @@ var figue = function () {
 			if (withCentroid) {
 				lines.push (putString (centroidstr , len , bar_ix - Math.floor (centroidstr.length / 2))) ; //centerString (centroidstr , len)) ;
 			}
-			
+			if (withDistance) {
+				lines.push (putString (distancestr , len , bar_ix - Math.floor (distancestr.length / 2))) ; //centerString (centroidstr , len)) ;
+			}
+				
 			// add horizontal line to connect the vertical bars of the lower level
 			var hlineLen = sep + (left_dendo[0].length -left_bar_ix) + right_bar_ix+1 ;
 			var hline = repeatChar ("_" , hlineLen) ;
@@ -296,9 +307,9 @@ figue.Node.prototype.isLeaf = function()
 		return false ;
 }
 
-figue.Node.prototype.buildDendogram = function (sep, balanced,withLabel,withCentroid)
+figue.Node.prototype.buildDendogram = function (sep, balanced,withLabel,withCentroid, withDistance)
 {
-	lines = figue.generateDendogram(this, sep, balanced,withLabel,withCentroid) ;
+	lines = figue.generateDendogram(this, sep, balanced,withLabel,withCentroid, withDistance) ;
 	return lines.join ("\n") ;	
 }
 
