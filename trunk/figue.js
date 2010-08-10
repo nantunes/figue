@@ -35,6 +35,21 @@ var figue = function () {
 		return d ;
 	}
 
+	function addVectors (vec1 , vec2) {
+		var N = vec1.length ;
+		var vec = new Array(N) ;
+		for (var i = 0 ; i < N ; i++)
+			vec[i] = vec1[i] + vec2[i] ;
+		return vec ;
+	}	
+
+	function multiplyVectorByValue (value , vec) {
+		var N = vec.length ;
+		var v = new Array(N) ;
+		for (var i = 0 ; i < N ; i++)
+			v[i] = value * vec[i] ;
+		return v ;
+	}	
 
 
 	function repeatChar(c, n) {
@@ -167,7 +182,7 @@ var figue = function () {
 					right = repeatChar (" " , right_dendo[0].length) ;
 				lines.push(left + repeatChar (" " , sep) + right) ;	
 				var l = left + repeatChar (" " , sep) + right ;
-				if (l.length != len) alert(l.length + "     -     " + len +"     -    " + l);
+//				if (l.length != len) alert(l.length + "     -     " + len +"     -    " + l);
 			}
 		}
 		
@@ -266,7 +281,97 @@ var figue = function () {
 	
 		return root ;
 	}
-	
+
+
+	function kmeans (k, vectors) {
+		var n = vectors.length ;
+		if ( k >= n ) 
+			return null ;
+
+		// randomly choose k vectors among n entries
+		var centroids = new Array(k) ;
+		var selected_indices = new Object ;
+		var cluster = 0 ;
+
+		while (cluster < k) {
+			var random_index = Math.floor(Math.random()*(n)) ;
+			if (random_index in selected_indices)
+				continue
+			selected_indices[random_index] = 1;
+			centroids[cluster] = vectors[random_index] ;
+			cluster++ ;
+		}
+		/*
+		centroids[0] = vectors[3] ;
+		centroids[1] = vectors[1] ; 
+		assignments[1] = 1 ;
+		assignments[3] = 0 ;
+		clusterSizes[1] = 1 ;
+		clusterSizes[0] = 1 ;
+		*/
+
+		var assignments = new Array(n) ;
+		var clusterSizes = new Array(k) ;
+		var repeat = true ;
+		var nb_iters = 0 ;
+		while (repeat) {
+
+			// assignment step
+			for (var j = 0 ; j < k ; j++)
+				clusterSizes[j] = 0 ;
+			
+			for (var i = 0 ; i < n ; i++) {
+				var vector = vectors[i] ;
+				var mindist = Number.MAX_VALUE ;
+				var best ;
+				for (var j = 0 ; j < k ; j++) {
+					dist = euclidianDistance (centroids[j], vector)
+					if (dist < mindist) {
+						mindist = dist ;
+						best = j ;
+					}
+				}
+				clusterSizes[best]++ ;
+				assignments[i] = best ;
+			}
+			//alert(assignments);
+
+			// update centroids step
+			var newCentroids = new Array(k) ;
+			for (var j = 0 ; j < k ; j++)
+				newCentroids[j] = null ;
+
+			for (var i = 0 ; i < n ; i++) {
+				cluster = assignments[i] ;
+				if (newCentroids[cluster] == null)
+					newCentroids[cluster] = vectors[i] ;
+				else
+					newCentroids[cluster] = addVectors (newCentroids[cluster] , vectors[i]) ;	
+			}
+
+			for (var j = 0 ; j < k ; j++) {
+				newCentroids[j] = multiplyVectorByValue (1/clusterSizes[j] , newCentroids[j]) ;
+			}	
+			
+			//alert(clusterSizes + " " + assignments + " " + newCentroids);
+
+			// check convergence
+			repeat = false ;
+			for (var j = 0 ; j < k ; j++) {
+				if (! newCentroids[j].compare (centroids[j])) {
+					repeat = true ; 
+					break ; 
+				}
+			}
+			centroids = newCentroids ;
+			nb_iters++ ;
+			if (nb_iters > figue.KMEANS_MAX_ITERATIONS)
+				repeat = false ;
+			
+		}
+		return { 'centroids': centroids , 'assignments': assignments} ;
+
+	}
 
 	function Matrix (rows,cols) 
 	{
@@ -309,11 +414,13 @@ var figue = function () {
 		MANHATTAN_DISTANCE: 1,
 		MAX_DISTANCE: 2,
 		PRINT_VECTOR_VALUE_PRECISION: 2,
+		KMEANS_MAX_ITERATIONS: 10,
 
 		Matrix: Matrix,
 		Node: Node,
 		generateDendogram: generateDendogram,
-		agglomerate: agglomerate
+		agglomerate: agglomerate,
+		kmeans: kmeans
 	}
 }() ;
 
@@ -341,4 +448,13 @@ figue.Node.prototype.buildDendogram = function (sep, balanced,withLabel,withCent
 }
 
 
-
+Array.prototype.compare = function(testArr) {
+    if (this.length != testArr.length) return false;
+    for (var i = 0; i < testArr.length; i++) {
+        if (this[i].compare) { 
+            if (!this[i].compare(testArr[i])) return false;
+        }
+        if (this[i] !== testArr[i]) return false;
+    }
+    return true;
+}
