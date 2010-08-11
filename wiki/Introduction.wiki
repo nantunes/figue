@@ -2,8 +2,13 @@
 
 = Introduction =
 
-figue is a javascript module to cluster data and visualize clusters.
-The current version only proposes hierarchical clustering with the most common linkage techniques: single-linkage, complete-linkage and average linkage. Hierarchical clusters can be visualized by means of dendograms such as this one:
+figue is a javascript package to cluster data and visualize clusters.
+The current version provides function for hierarchical clustering and k-means. 
+
+== Hierarchical Clustering ==
+
+Hierarchical clusters can be generated 
+with the most common linkage techniques: single-linkage, complete-linkage and average linkage and distance (Euclidian, Max, Manhattan). Hierarchical clusters can be visualized by means of dendograms such as this one:
 {{{
                                                |               
                                   ___________________________  
@@ -21,7 +26,7 @@ For more information about hierarchical clustering please refer to [http://en.wi
 
 Here is an [http://web.science.mq.edu.au/~jydelort/figue/demo.html interactive demo] of figue. 
 
-= Example =
+=== Example ===
 
 
 {{{
@@ -127,4 +132,3 @@ This page will print:
 ==TODO==
   * In demo.html add function to randomly generate DS of any size
   * In wiki page, include results of a scalability analysis
-  * In figue.js add kmeans
