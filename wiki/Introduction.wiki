@@ -3,7 +3,7 @@
 = Introduction =
 
 figue is a javascript package to cluster data and visualize clusters.
-The current version provides function for hierarchical clustering and k-means. 
+The current version provides functions for hierarchical clustering and k-means. 
 
 == Hierarchical Clustering ==
 
@@ -128,6 +128,9 @@ This page will print:
  Microsoft         Skype          Yahoo             eBay              SAP               IBM     
 
 }}}
+
+
+== K-means ==
 
 ==TODO==
   * In demo.html add function to randomly generate DS of any size
