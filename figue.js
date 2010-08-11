@@ -301,14 +301,6 @@ var figue = function () {
 			centroids[cluster] = vectors[random_index] ;
 			cluster++ ;
 		}
-		/*
-		centroids[0] = vectors[3] ;
-		centroids[1] = vectors[1] ; 
-		assignments[1] = 1 ;
-		assignments[3] = 0 ;
-		clusterSizes[1] = 1 ;
-		clusterSizes[0] = 1 ;
-		*/
 
 		var assignments = new Array(n) ;
 		var clusterSizes = new Array(k) ;
