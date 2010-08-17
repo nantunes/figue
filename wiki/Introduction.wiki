@@ -6,7 +6,7 @@ This project provides a collection of clustering algorithms implemented in Javas
 
 Here is an [http://web.science.mq.edu.au/~jydelort/figue/demo.html interactive demo] of figue. 
 
-== Using figue ==
+= Using figue =
 
 In order to use figue in your web page, simply link to it in the head section of your HTML page, e.g.:
 
@@ -20,7 +20,7 @@ In order to use figue in your web page, simply link to it in the head section of
 }}}
 
 
-== Hierarchical Clustering ==
+= Hierarchical Clustering =
 
 Hierarchical clustering is useful to cluster data without knowing _apriori_ the number of clusters or just to visualize the distance relationships between data items.
 
@@ -184,7 +184,9 @@ This page will print:
 }}}
 
 
-== K-means ==
+= K-means =
+
+
 
 ==TODO==
   * In demo.html add function to randomly generate DS of any size
