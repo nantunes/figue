@@ -96,7 +96,49 @@ function parseData(data) {
 	return {'labels': labels , 'vectors': vectors} ;
 }
 
-function test() {
+function runAlgo() {
+	var algo = document.getElementById('algo').value ;
+	switch (algo) {
+		case 'kmeans': { runKM() ; break ; }
+		case 'hierarchical': { runHC() ; break ; }
+	}
+	document.getElementById('output_panel').style.display = 'block' ;
+} 
+
+
+function updateAlgo() {
+	var algo = document.getElementById('algo').value ;
+	switch (algo) {
+		case 'kmeans': { document.getElementById('km_panel').style.display = 'block' ;  document.getElementById('hc_panel').style.display = 'none' ; break ; }
+		case 'hierarchical': {  document.getElementById('km_panel').style.display = 'none' ;  document.getElementById('hc_panel').style.display = 'block' ; break ;  }
+	}
+	document.getElementById('text').innerHTML = ""; 
+	document.getElementById('output_panel').style.display = 'none' ;
+} 
+
+function runKM() {
+	var data = parseData (document.getElementById('data').value) ;
+	var vectors = data['vectors'] ;
+	var labels = data['labels'] ;
+	var K = parseInt (document.getElementById('K').value) ;
+  	var clusters = figue.kmeans(K , vectors);
+	
+	var txt ;
+	if (clusters) {
+		txt = "<table border='1'>" ;
+		txt += "<tr><th>Label</th><th>Vector</th><th>Cluster id</th><th>Cluster centroid</th></tr>";
+
+		for (var i = 0 ; i < vectors.length ; i++) {
+			var index = clusters.assignments[i] ;
+			txt += "<tr><td>" + labels[i] + "</td><td>" + vectors[i] + "</td><td>" + index + "</td><td>" + clusters.centroids[index] + "</td></tr>";
+		}
+		txt += "</table>"
+	} else 
+		txt = "No result (too many clusters/too few different instances (try changing K)" ;
+  document.getElementById('text').innerHTML = txt; 
+}
+
+function runHC() {
 	var data = parseData (document.getElementById('data').value) ;
 	var space = parseInt (document.getElementById('space').value) ;
 	var balanced = (radioValue('balanced') === 'true') ;
@@ -106,7 +148,6 @@ function test() {
 	var linkage = parseInt (radioValue('linkage')) ;
 	var distance = parseInt (radioValue('distance')) ;
 	root = figue.agglomerate(data['labels'], data['vectors'] , distance, linkage) ;
-	document.getElementById('output_panel').style.display = 'block' ;
 	document.getElementById('text').innerHTML = root.buildDendogram(space, balanced, withLabel,withCentroid,withDistance)  ;
 }
 
@@ -117,8 +158,13 @@ function radioValue(name) {
 			return radios[i].value ;
 }
 
+function initDemo() {
+	updateDS();
+	updateAlgo();
+} 
+
 </script>
-<body onload="updateDS();">
+<body onload="initDemo();">
 
 
 <div id="input_panel">
@@ -140,8 +186,38 @@ Or use an existing dataset:
 </fieldset>
 </div>
 
+<div id="algo_panel">
+<fieldset id="algorithms">
+<legend>Clustering algorithm</legend>
+<select id="algo" onchange="updateAlgo();">
+<option value="hierarchical" selected>Hierarchical clustering</option>
+<option value="kmeans">K-means</option>
+</select>
+</fieldset>
+</div>
+
+
 <div id="param_panel">
-<fieldset id="params">
+
+<div id="km_panel">
+<fieldset id="km_params">
+<legend>Control panel</legend>
+Number of clusters (K):
+<select id="K">
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4" selected="selected">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</fieldset>
+</div>
+
+<div id="hc_panel">
+<fieldset id="hc_params">
 <legend>Control panel</legend>
 Linkage method: 
 <input type="radio" name="linkage" value="0" checked/>Single-linkage
@@ -176,27 +252,26 @@ Minimum spacing between nodes:
 <option value="7" selected="selected">7</option>
 <option value="9">9</option>
 </select>
-</div>
 </fieldset>
+</div>
 
 <div id="cluster_button" style="">
 <div style="display:table-row; width:100%;text-align:center;">
 <div style="vertical-align: middle; display:table-cell;">
-<input type="button" onclick="test();" value="Cluster data and display dendogram" />
+<input type="button" onclick="runAlgo();" value="Cluster data and display assignments" />
 </div>
 </div>
 </div>
 
-
-</div>
 
 
 <div id="output_panel">
 <fieldset>
-<legend>Dendogram</legend>
+<legend>Output</legend>
 <pre id="text"> </pre>
 </fieldset>
 </div>
+
 </body>
 </html>
 
