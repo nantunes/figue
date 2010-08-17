@@ -20,6 +20,116 @@ In order to use figue in your web page, simply link to it in the head section of
 }}}
 
 
+= K-means =
+
+K-means is one of the most famous clustering algorithm. It is useful to cluster data when the number of clusters is known _apriori_.
+
+The following code shows how to cluster data into 4 clusters with k-means using figue:
+
+{{{
+
+  // Data source: LinkedIn
+  // Initial data are businesses that need to be clustered according to their size (nb of employees) and revenue (in mln$)
+
+  var data = [ 
+      {'company': 'Microsoft' , 'size': 91259, 'revenue': 60420},
+      {'company': 'IBM' , 'size': 400000, 'revenue': 98787},
+      {'company': 'Skype' , 'size': 700, 'revenue': 716},
+      {'company': 'SAP' , 'size': 48000, 'revenue': 11567},
+      {'company': 'Yahoo!' , 'size': 14000 , 'revenue': 6426 },
+      {'company': 'eBay' , 'size': 15000, 'revenue': 8700},
+   ] ;
+
+  // Create the labels and the vectors describing the data
+
+  var labels = new Array ;
+  var vectors = new Array ;
+  for (var i = 0 ; i < data.length ; i++) {
+      labels[i] = data[i]['company'] ;
+      vectors[i] = [ data[i]['size'] , data[i]['revenue']] ;
+  }
+
+
+  var clusters = figue.kmeans(4, vectors) ;
+
+}}}
+
+The *kmeans* function takes as input the number K of clusters and a list of N input vectors and it outputs an object with two attributes:
+  * *centroids*: an Array of K vectors containing the centroid of each cluster
+  * *assignments*: An Array of size N representing for each input vector the index of the cluster
+
+The *kmeans* function will return null if:
+  * N < K
+  * The number of _different_ input vectors is smaller than K
+  
+
+
+=== Full example ===
+
+The following example cluster data into 4 classes and display the assignments.
+
+{{{
+<html>
+<head>
+
+<script type="text/javascript" src="figue.js"></script>
+
+<script type="text/javascript">
+
+function load() {
+
+  // Data source: LinkedIn
+  // Initial data are businesses that need to be clustered according to their size (nb of employees) and revenue (in mln$)
+
+  var data = [ 
+      {'company': 'Microsoft' , 'size': 91259, 'revenue': 60420},
+      {'company': 'IBM' , 'size': 400000, 'revenue': 98787},
+      {'company': 'Skype' , 'size': 700, 'revenue': 716},
+      {'company': 'SAP' , 'size': 48000, 'revenue': 11567},
+      {'company': 'Yahoo!' , 'size': 14000 , 'revenue': 6426 },
+      {'company': 'eBay' , 'size': 15000, 'revenue': 8700},
+   ] ;
+
+  // Create the labels and the vectors describing the data
+
+  var labels = new Array ;
+  var vectors = new Array ;
+  for (var i = 0 ; i < data.length ; i++) {
+      labels[i] = data[i]['company'] ;
+      vectors[i] = [ data[i]['size'] , data[i]['revenue']] ;
+  }
+
+  var clusters = figue.kmeans(4, vectors) ;
+
+  var txt ;
+  if (clusters) {
+    txt = "<table border='1'>" ;
+    txt += "<tr><th>Label</th><th>Vector</th><th>Cluster id</th><th>Cluster centroid</th</tr>";
+
+    for (var i = 0 ; i < vectors.length ; i++) {
+      var index = clusters.assignments[i] ;
+      txt += "<tr><td>" + labels[i] + "</td><td>" + vectors[i] + "</td><td>" + index + "</td><td>" + clusters.centroids[index] + "<
+/td></tr>";
+    }
+    txt += "</table>"
+  } else 
+    txt = "No result (too many clusters/too few different instances (try changing K)" ;
+  
+  document.getElementById('mypre').innerHTML = txt; 
+
+}
+
+</script>
+
+<body onload="load();">
+
+<pre id="mypre"></pre>
+
+</body>
+</html>
+
+}}}
+
 = Hierarchical Clustering =
 
 Hierarchical clustering is useful to cluster data without knowing _apriori_ the number of clusters or just to visualize the distance relationships between data items.
@@ -92,7 +202,7 @@ Currently the dendogram can be customized to:
   * display cluster centroids
   * display distance between centroids
 
-The function to produce dendograms is a method that is must be called by the root node, e.g. 
+The *buildDendogram* function to produce dendograms is a method that is must be called by the root node, e.g. 
 
 {{{
 root.buildDendogram (5, true, true, true, false) ;
@@ -108,6 +218,7 @@ This example will produce a dendogram:
 
 === Full example ===
 
+The following example hierarchically cluster data and display the corresponding dendogram.
 
 {{{
 <html>
@@ -182,9 +293,6 @@ This page will print:
  Microsoft         Skype          Yahoo             eBay              SAP               IBM     
 
 }}}
-
-
-= K-means =
 
 
 
