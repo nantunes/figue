@@ -2,13 +2,74 @@
 
 = Introduction =
 
-figue is a javascript package to cluster data and visualize clusters.
-The current version provides functions for hierarchical clustering and k-means. 
+This project provides a collection of clustering algorithms implemented in Javascript and open sourced under the MIT licence. The current version supports k-means and agglomerative clustering and provides functions to visualize clustering output (e.g. dendograms). 
+
+Here is an [http://web.science.mq.edu.au/~jydelort/figue/demo.html interactive demo] of figue. 
+
+== Using figue ==
+
+In order to use figue in your web page, simply link to it by adding in your HTML 
+
+{{{
+<html>
+<head>
+
+<script type="text/javascript" src="figue.js"></script>
+
+}}}
+
 
 == Hierarchical Clustering ==
 
-Hierarchical clusters can be generated 
-with the most common linkage techniques: single-linkage, complete-linkage and average linkage and distance (Euclidian, Max, Manhattan). Hierarchical clusters can be visualized by means of dendograms such as this one:
+Hierarchical clustering is useful to cluster data without knowing _apriori_ the number of clusters or just to visualize the distance relationships between data items.
+
+The following code shows how to generate a hierarchical cluster using figue:
+
+{{{
+
+  // Data source: LinkedIn
+  // Initial data are businesses that need to be clustered according to their size (nb of employees) and revenue (in mln$)
+
+  var data = [ 
+      {'company': 'Microsoft' , 'size': 91259, 'revenue': 60420},
+      {'company': 'IBM' , 'size': 400000, 'revenue': 98787},
+      {'company': 'Skype' , 'size': 700, 'revenue': 716},
+      {'company': 'SAP' , 'size': 48000, 'revenue': 11567},
+      {'company': 'Yahoo!' , 'size': 14000 , 'revenue': 6426 },
+      {'company': 'eBay' , 'size': 15000, 'revenue': 8700},
+   ] ;
+
+  // Create the labels and the vectors describing the data
+
+  var labels = new Array ;
+  var vectors = new Array ;
+  for (var i = 0 ; i < data.length ; i++) {
+      labels[i] = data[i]['company'] ;
+      vectors[i] = [ data[i]['size'] , data[i]['revenue']] ;
+  }
+
+
+  var root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SINGLE_LINKAGE) ;
+
+}}}
+
+Figue can generate hierarchical clusters using the following linkage techniques: 
+  * single-linkage (figue.SINGLE_LINKAGE)
+  * complete-linkage (figue.COMPLETE_LINKAGE)
+  * average linkage (figue.AVERAGE_LINKAGE)
+
+Three different types of distances are also supported:
+  * Euclidian (figue.EUCLIDIAN_DISTANCE)
+  * Max (figue.MAX_DISTANCE)
+  * Manhattan (figue.MANHATTAN_DISTANCE)
+
+For more information about hierarchical clustering please refer to [http://en.wikipedia.org/wiki/Cluster_analysis#Hierarchical_clustering Wikipedia].
+
+
+=== Dendograms === 
+
+Figue can generate graphical representations of hierarchical clusters by means of dendograms such as this one:
+
 {{{
                                                |               
                                   ___________________________  
@@ -22,11 +83,17 @@ with the most common linkage techniques: single-linkage, complete-linkage and av
 anna       stephany       tom       marc       john       karin
 }}}
 
-For more information about hierarchical clustering please refer to [http://en.wikipedia.org/wiki/Cluster_analysis#Hierarchical_clustering Wikipedia].
 
-Here is an [http://web.science.mq.edu.au/~jydelort/figue/demo.html interactive demo] of figue. 
+Currently the dendogram can be customized to:
+  * control the minimum spacing between nodes
+  * be balanced (i.e. all leaves at the same level)
+  * display data labels
+  * display cluster centroids
+  * display distance centroids
 
-=== Example ===
+
+
+=== Full example ===
 
 
 {{{
@@ -60,34 +127,8 @@ function load() {
       vectors[i] = [ data[i]['size'] , data[i]['revenue']] ;
   }
 
-  // Generate a hierarchical tree, 
-
-
-  // Generate a hierarchical tree
-  // Return:
-  //  - root of the tree, in which each node contains:
-  //    - the left and right subtrees (if any),
-  //    - the centroid value, 
-  //    - the subtree depth and
-  //    - the cluster size
-  // Currently supported distance functions are:
-  //  - figue.EUCLIDIAN_DISTANCE
-  //  - figue.MANHATTAN_DISTANCE
-  //  - figue.MAX_DISTANCE
-  // Currently supported linkage functions are:
-  //  - figue.SINGLE_LINKAGE
-  //  - figue.MAXIMUM_LINKAGE
-  //  - figue.AVERAGE_LINKAGE
 
   var root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SINGLE_LINKAGE) ;
-
-  // Produce the dendogram
-  // Currently the dendogram can be customized to:
-  //  - control the minimum spacing between nodes
-  //  - be balanced (i.e. all leaves at the same level)
-  //  - display data labels
-  //  - display cluster centroids
-  //  - display distance centroids
 
   var dendogram = root.buildDendogram (5, true, true, true, false) ;
 
