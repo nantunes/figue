@@ -8,13 +8,14 @@ Here is an [http://web.science.mq.edu.au/~jydelort/figue/demo.html interactive d
 
 == Using figue ==
 
-In order to use figue in your web page, simply link to it by adding in your HTML 
+In order to use figue in your web page, simply link to it in the head section of your HTML page, e.g.:
 
 {{{
-<html>
 <head>
 
 <script type="text/javascript" src="figue.js"></script>
+
+</head>
 
 }}}
 
@@ -89,8 +90,20 @@ Currently the dendogram can be customized to:
   * be balanced (i.e. all leaves at the same level)
   * display data labels
   * display cluster centroids
-  * display distance centroids
+  * display distance between centroids
 
+The function to produce dendograms is a method that is must be called by the root node, e.g. 
+
+{{{
+root.buildDendogram (5, true, true, true, false) ;
+}}}
+
+This example will produce a dendogram:
+  * with minimum spacing between nodes: 5 (i.e. 5 blank characters)
+  * balanced
+  * showing cluster labels
+  * showing cluster centroids
+  * not showing distance between clusters
 
 
 === Full example ===
