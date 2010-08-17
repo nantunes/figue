@@ -285,23 +285,38 @@ var figue = function () {
 
 	function kmeans (k, vectors) {
 		var n = vectors.length ;
-		if ( k >= n ) 
+		if ( k > n ) 
 			return null ;
 
-		// randomly choose k vectors among n entries
+		// randomly choose k different vectors among n entries
 		var centroids = new Array(k) ;
-		var selected_indices = new Object ;
+		var tested_indices = new Object ;
+		var tested = 0 ;
 		var cluster = 0 ;
-
+		var i , vector, select ;
 		while (cluster < k) {
-			var random_index = Math.floor(Math.random()*(n)) ;
-			if (random_index in selected_indices)
-				continue
-			selected_indices[random_index] = 1;
-			centroids[cluster] = vectors[random_index] ;
-			cluster++ ;
-		}
+			if (tested == n)
+				return null ;
 
+			var random_index = Math.floor(Math.random()*(n)) ;
+			if (random_index in tested_indices)
+				continue
+			tested_indices[random_index] = 1;
+			tested++ ;
+			vector = vectors[random_index] ;
+			select = true ;
+			for (i = 0 ; i < cluster ; i++) {
+				if ( vector.compare (centroids[i]) ) {
+					select = false ;
+					break ;
+				}
+			}
+			if (select) {
+				centroids[cluster] = vector ;
+				cluster++ ;
+			}
+		}
+	
 		var assignments = new Array(n) ;
 		var clusterSizes = new Array(k) ;
 		var repeat = true ;
@@ -450,3 +465,5 @@ Array.prototype.compare = function(testArr) {
     }
     return true;
 }
+
+
