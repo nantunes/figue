@@ -143,7 +143,7 @@ The previous code will display a page showing the following table (note: values 
 
 = Hierarchical Clustering =
 
-Hierarchical clustering is useful to cluster data without knowing _apriori_ the number of clusters or just to visualize the distance relationships between data items.
+Hierarchical clustering is useful to cluster data without knowing _apriori_ the number of clusters or just in order to visualize the distance relationships between data items.
 
 The following code shows how to generate a hierarchical cluster using figue:
 
