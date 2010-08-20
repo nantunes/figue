@@ -267,8 +267,9 @@ function load() {
 
   var dendogram = root.buildDendogram (5, true, true, true, false) ;
 
-  // Render the dendogram in the page
-  document.getElementById('mypre').innerHTML = dendogram
+  // Render the dendogram in the page (note: pre is handled differently by IE and the rest of the browsers)
+  var pre = document.getElementById('mypre') ;
+  if( document.all ) { pre.innerText = dendogram ; } else { pre.innerHTML = dendogram ; }
 }
 
 </script>
