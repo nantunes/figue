@@ -1,4 +1,10 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<title>Interactive Demo of figue</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <style>
 
@@ -58,20 +64,16 @@ body {
 
 </style>
 
+
 <script type="text/javascript" src="figue.js"></script>
 
 
 <script type="text/javascript">
-
-
-var datasets = {
-	'people': "anna,37,2\nkarin,65,3\njohn,34,2\ntom,38,5\nmarc,38,6\nstephany,38,3\n" ,
-	'firms': "Microsoft,91259,60420\nIBM,400000,98787\nSkype,700,716\nSAP,48000,11567\nYahoo,14000,6426\neBay,15000,8700\n" ,
-}
-
+/* <![CDATA[ */
 
 function updateDS() {
-	var ds = document.getElementById('datasets').value ;
+	var domobj = document.getElementById('datasets') ;
+	var ds = domobj.options[domobj.selectedIndex].value ;
 	if (ds in datasets)
 		document.getElementById('data').value = datasets[ds] ;
 	else
@@ -97,7 +99,8 @@ function parseData(data) {
 }
 
 function runAlgo() {
-	var algo = document.getElementById('algo').value ;
+	var domobj = document.getElementById('algo') ;
+	var algo = domobj.options[domobj.selectedIndex].value ;
 	switch (algo) {
 		case 'kmeans': { runKM() ; break ; }
 		case 'hierarchical': { runHC() ; break ; }
@@ -107,7 +110,8 @@ function runAlgo() {
 
 
 function updateAlgo() {
-	var algo = document.getElementById('algo').value ;
+	var domobj = document.getElementById('algo') ;
+	var algo = domobj.options[domobj.selectedIndex].value ;
 	switch (algo) {
 		case 'kmeans': { document.getElementById('km_panel').style.display = 'block' ;  document.getElementById('hc_panel').style.display = 'none' ; break ; }
 		case 'hierarchical': {  document.getElementById('km_panel').style.display = 'none' ;  document.getElementById('hc_panel').style.display = 'block' ; break ;  }
@@ -120,7 +124,8 @@ function runKM() {
 	var data = parseData (document.getElementById('data').value) ;
 	var vectors = data['vectors'] ;
 	var labels = data['labels'] ;
-	var K = parseInt (document.getElementById('K').value) ;
+	var domobj = document.getElementById('K') ;
+	var K = parseInt (domobj.options[domobj.selectedIndex].value) ;
   	var clusters = figue.kmeans(K , vectors);
 	
 	var txt ;
@@ -140,7 +145,8 @@ function runKM() {
 
 function runHC() {
 	var data = parseData (document.getElementById('data').value) ;
-	var space = parseInt (document.getElementById('space').value) ;
+	var domobj = document.getElementById('space') ;
+	var space = parseInt (domobj.options[domobj.selectedIndex].value) ;
 	var balanced = (radioValue('balanced') === 'true') ;
 	var withLabel = (radioValue('withLabel') === 'true') ;
 	var withCentroid = (radioValue('withCentroid') === 'true') ;
@@ -148,7 +154,7 @@ function runHC() {
 	var linkage = parseInt (radioValue('linkage')) ;
 	var distance = parseInt (radioValue('distance')) ;
 	root = figue.agglomerate(data['labels'], data['vectors'] , distance, linkage) ;
-	document.getElementById('text').innerHTML = root.buildDendogram(space, balanced, withLabel,withCentroid,withDistance)  ;
+	document.getElementById('text').innerHTML = root.buildDendogram(space, balanced, withLabel,withCentroid,withDistance).replace(/\n/g , '<br/>') ;
 }
 
 function radioValue(name) {
@@ -158,13 +164,22 @@ function radioValue(name) {
 			return radios[i].value ;
 }
 
-function initDemo() {
+var datasets = {
+	'people': "anna,37,2\nkarin,65,3\njohn,34,2\ntom,38,5\nmarc,38,6\nstephany,38,3\n" ,
+	'firms': "Microsoft,91259,60420\nIBM,400000,98787\nSkype,700,716\nSAP,48000,11567\nYahoo,14000,6426\neBay,15000,8700\n" 
+} ;
+
+
+window.onload = function() {
 	updateDS();
 	updateAlgo();
 } 
-
+/* ]]> */
 </script>
-<body onload="initDemo();">
+
+</head>
+
+<body>
 
 
 <div id="input_panel">
@@ -273,5 +288,9 @@ Minimum spacing between nodes:
 </div>
 
 </body>
+
+
+
+
 </html>
 
