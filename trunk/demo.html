@@ -154,7 +154,9 @@ function runHC() {
 	var linkage = parseInt (radioValue('linkage')) ;
 	var distance = parseInt (radioValue('distance')) ;
 	root = figue.agglomerate(data['labels'], data['vectors'] , distance, linkage) ;
-	document.getElementById('text').innerHTML = root.buildDendogram(space, balanced, withLabel,withCentroid,withDistance).replace(/\n/g , '<br/>') ;
+	var pre = document.getElementById('text') ;
+	var text = root.buildDendogram(space, balanced, withLabel,withCentroid,withDistance);
+	if( document.all ) { pre.innerText = text ; } else { pre.innerHTML = text ; }
 }
 
 function radioValue(name) {
