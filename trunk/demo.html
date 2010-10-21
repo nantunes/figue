@@ -108,17 +108,25 @@ function runAlgo() {
 	switch (algo) {
 		case 'kmeans': { runKM() ; break ; }
 		case 'hierarchical': { runHC() ; break ; }
+		case 'fcmeans': { runFCM() ; break ; }
 	}
 	document.getElementById('output_panel').style.display = 'block' ;
 } 
 
+function showParamPanel (visiblePanel) {
+	var panelNames = ['km_panel', 'fcm_panel', 'hc_panel'] ;
+	for (var i = 0 ; i < panelNames.length ; i++)
+		document.getElementById(panelNames[i]).style.display = 'none' ; 
+	document.getElementById(visiblePanel).style.display = 'block' ;
+}
 
 function updateAlgo() {
 	var domobj = document.getElementById('algo') ;
 	var algo = domobj.options[domobj.selectedIndex].value ;
 	switch (algo) {
-		case 'kmeans': { document.getElementById('km_panel').style.display = 'block' ;  document.getElementById('hc_panel').style.display = 'none' ; break ; }
-		case 'hierarchical': {  document.getElementById('km_panel').style.display = 'none' ;  document.getElementById('hc_panel').style.display = 'block' ; break ;  }
+		case 'kmeans': { showParamPanel('km_panel') ; break ; }
+		case 'hierarchical': { showParamPanel('hc_panel') ; break ;  }
+		case 'fcmeans': { showParamPanel('fcm_panel') ; break ;  }
 	}
 	document.getElementById('text').innerHTML = ""; 
 	document.getElementById('output_panel').style.display = 'none' ;
@@ -128,7 +136,7 @@ function runKM() {
 	var data = parseData (document.getElementById('data').value) ;
 	var vectors = data['vectors'] ;
 	var labels = data['labels'] ;
-	var domobj = document.getElementById('K') ;
+	var domobj = document.getElementById('KM-K') ;
 	var K = parseInt (domobj.options[domobj.selectedIndex].value) ;
   	var clusters = figue.kmeans(K , vectors);
 	
@@ -161,6 +169,34 @@ function runHC() {
 	var pre = document.getElementById('text') ;
 	var text = root.buildDendogram(space, balanced, withLabel,withCentroid,withDistance);
 	if( document.all ) { pre.innerText = text ; } else { pre.innerHTML = text ; }
+}
+
+function runFCM() {
+	var data = parseData (document.getElementById('data').value) ;
+	var vectors = data['vectors'] ;
+	var labels = data['labels'] ;
+	var domobj = document.getElementById('FCM-K') ;
+	var K = parseInt (domobj.options[domobj.selectedIndex].value) ;
+	var fuzziness = parseInt (document.getElementById('fuzziness').value) ;
+	var epsilon = parseInt (document.getElementById('epsilon').value) ;
+  	
+	var clusters = figue.fcmeans(K, vectors, epsilon, fuzziness);
+	
+	var txt ;
+	if (clusters) {
+		txt = "<table border='1'>" ;
+		txt += "<tr><th>Cluster id</th><th>Cluster centroid</th></tr>";
+
+		for (var i = 0 ; i < K ; i++) {
+			txt += "<tr><td>" + i + "</td><td>" + clusters.centroids[i] + "</td></tr>";
+		}
+		txt += "</table>"
+		txt += "<br/>"
+		txt += clusters.membershipMatrix ;
+		
+	} else 
+		txt = "No result (too many clusters/too few different instances (try changing K)" ;
+  document.getElementById('text').innerHTML = txt; 
 }
 
 function radioValue(name) {
@@ -213,6 +249,7 @@ Or use an existing dataset:
 <select id="algo" onchange="updateAlgo();">
 <option value="hierarchical" selected>Hierarchical clustering</option>
 <option value="kmeans">K-means</option>
+<option value="fcmeans">Fuzzy C-means (Experimental)</option>
 </select>
 </fieldset>
 </div>
@@ -224,7 +261,7 @@ Or use an existing dataset:
 <fieldset id="km_params">
 <legend>Control panel</legend>
 Number of clusters (K):
-<select id="K">
+<select id="KM-K">
 <option value="2">2</option>
 <option value="3">3</option>
 <option value="4" selected="selected">4</option>
@@ -234,6 +271,27 @@ Number of clusters (K):
 <option value="8">8</option>
 <option value="9">9</option>
 </select>
+</fieldset>
+</div>
+
+<div id="fcm_panel">
+<fieldset id="fcm_params">
+<legend>Control panel</legend>
+Number of clusters (K):
+<select id="FCM-K">
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4" selected="selected">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+<br/>
+Epsilon: <input id="epsilon" value="0.3" size="5" />	
+<br/>
+Fuzziness: <input id="fuzziness" value="2" size="5" />	
 </fieldset>
 </div>
 
