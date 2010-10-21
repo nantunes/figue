@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This project provides a collection of clustering algorithms implemented in Javascript and open sourced under the MIT licence. The current version supports k-means and agglomerative clustering and provides functions to visualize clustering output (e.g. dendograms). 
+This project provides a collection of clustering algorithms implemented in Javascript and open sourced under the MIT licence. The current version supports k-means, fuzzy c-means and agglomerative clustering and provides functions to visualize clustering output (e.g. dendograms). 
 
 figue has been successfully tested on IE, Firefox, Chrome and Safari.
 
