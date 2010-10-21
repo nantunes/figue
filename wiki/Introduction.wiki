@@ -308,8 +308,11 @@ The previous code will display a page showing this dendogram:
 
 }}}
 
+= Fuzzy C-means =
 
+The function for calculating fuzzy clusters and instances assignments has recently been added and will be documented soon.
 
 ==TODO==
   * In demo.html add function to randomly generate DS of any size
   * In wiki page, include results of a scalability analysis
+  * rewrite demo.html using jquery
