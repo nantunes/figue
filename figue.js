@@ -50,7 +50,15 @@ var figue = function () {
 			v[i] = value * vec[i] ;
 		return v ;
 	}	
-
+	
+	function vectorDotProduct (vec1, vec2) {
+		var N = vec1.length ;
+		var s = 0 ;
+		for (var i = 0 ; i < N ; i++)
+			s += vec1[i] * vec2[i] ;
+		return s ;
+	}
+	
 
 	function repeatChar(c, n) {
 		var str = "";
@@ -182,7 +190,6 @@ var figue = function () {
 					right = repeatChar (" " , right_dendo[0].length) ;
 				lines.push(left + repeatChar (" " , sep) + right) ;	
 				var l = left + repeatChar (" " , sep) + right ;
-//				if (l.length != len) alert(l.length + "     -     " + len +"     -    " + l);
 			}
 		}
 		
@@ -283,44 +290,63 @@ var figue = function () {
 	}
 
 
-	function kmeans (k, vectors) {
+	
+	function getRandomVectors(k, vectors) {
+		/*  Returns a array of k distinct vectors randomly selected from a the input array of vectors
+			Returns null if k > n or if there are less than k distinct objects in vectors */
+		
 		var n = vectors.length ;
 		if ( k > n ) 
 			return null ;
-
-		// randomly choose k different vectors among n entries
-		var centroids = new Array(k) ;
+		
+		var selected_vectors = new Array(k) ;
+		var selected_indices = new Array(k) ;
+		
 		var tested_indices = new Object ;
 		var tested = 0 ;
-		var cluster = 0 ;
+		var selected = 0 ;
 		var i , vector, select ;
-		while (cluster < k) {
+		while (selected < k) {
 			if (tested == n)
 				return null ;
-
+			
 			var random_index = Math.floor(Math.random()*(n)) ;
 			if (random_index in tested_indices)
-				continue
+				continue ;
+			
 			tested_indices[random_index] = 1;
 			tested++ ;
 			vector = vectors[random_index] ;
 			select = true ;
-			for (i = 0 ; i < cluster ; i++) {
-				if ( vector.compare (centroids[i]) ) {
+			for (i = 0 ; i < selected ; i++) {
+				if ( vector.compare (selected_vectors[i]) ) {
 					select = false ;
 					break ;
 				}
 			}
 			if (select) {
-				centroids[cluster] = vector ;
-				cluster++ ;
+				selected_vectors[selected] = vector ;
+				selected_indices[selected] = random_index ; 
+				selected++ ;
 			}
 		}
+		return {'vectors': selected_vectors, 'indices': selected_indices} ;
+	}
 	
+	function kmeans (k, vectors) {
+		var n = vectors.length ;
 		var assignments = new Array(n) ;
 		var clusterSizes = new Array(k) ;
 		var repeat = true ;
 		var nb_iters = 0 ;
+		var centroids = null ;
+		
+		var t = getRandomVectors(k, vectors) ;
+		if (t == null)
+			return null ;
+		else
+			centroids = t.vectors ;
+			
 		while (repeat) {
 
 			// assignment step
@@ -341,8 +367,7 @@ var figue = function () {
 				clusterSizes[best]++ ;
 				assignments[i] = best ;
 			}
-			//alert(assignments);
-
+		
 			// update centroids step
 			var newCentroids = new Array(k) ;
 			for (var j = 0 ; j < k ; j++)
@@ -360,8 +385,6 @@ var figue = function () {
 				newCentroids[j] = multiplyVectorByValue (1/clusterSizes[j] , newCentroids[j]) ;
 			}	
 			
-			//alert(clusterSizes + " " + assignments + " " + newCentroids);
-
 			// check convergence
 			repeat = false ;
 			for (var j = 0 ; j < k ; j++) {
@@ -372,6 +395,8 @@ var figue = function () {
 			}
 			centroids = newCentroids ;
 			nb_iters++ ;
+			
+			// check nb of iters
 			if (nb_iters > figue.KMEANS_MAX_ITERATIONS)
 				repeat = false ;
 			
@@ -379,7 +404,91 @@ var figue = function () {
 		return { 'centroids': centroids , 'assignments': assignments} ;
 
 	}
+	
+	function fcmeans (k, vectors, epsilon, fuzziness) {
+		var membershipMatrix = new Matrix (vectors.length, k) ;
+		var repeat = true ;
+		var nb_iters = 0 ;
+		
+		var centroids = null ;
+		
+		var i,j,l, tmp, norm, max, diff ;
+		while (repeat) {
+			// initialize or update centroids
+			if (centroids == null) {
+				
+				tmp = getRandomVectors(k, vectors) ;
+				if (tmp == null)
+					return null ;
+				else
+					centroids = tmp.vectors ;
+				
+			} else {
+				for (j = 0 ; j < k; j++) {
+					centroids[j] = [] ;
+					norm = 0 ;
+					for (i = 0 ; i < membershipMatrix.rows ; i++) {
+						norm += Math.pow(membershipMatrix.mtx[i][j], fuzziness) ;
+						tmp = multiplyVectorByValue( Math.pow(membershipMatrix.mtx[i][j], fuzziness) , vectors[i]) ;
+						
+						if (i == 0)
+							centroids[j] = tmp ;
+						else
+							centroids[j] = addVectors (centroids[j] , tmp) ;
+					}
+					if (norm > 0)
+						centroids[j] = multiplyVectorByValue(1/norm, centroids[j]);
+					
+					
+				}
+				
+			}
+			//alert(centroids);
+			
+			// update the degree of membership of each vector
+			previousMembershipMatrix = membershipMatrix.copy() ;
+			for (i = 0 ; i < membershipMatrix.rows ; i++) {
+				for (j = 0 ; j < k ; j++) {
+					membershipMatrix.mtx[i][j] = 0;
+					for (l = 0 ; l < k ; l++) {
+						if (euclidianDistance(vectors[i] , centroids[l]) == 0)
+							tmp = 0 ;
+						else
+							tmp =  euclidianDistance(vectors[i] , centroids[j]) / euclidianDistance(vectors[i] , centroids[l]) ;
+						tmp = Math.pow (tmp, 2/(fuzziness-1)) ;
+						membershipMatrix.mtx[i][j] += tmp ;
+					}
+					if (membershipMatrix.mtx[i][j] > 0)
+						membershipMatrix.mtx[i][j] = 1 / membershipMatrix.mtx[i][j] ;
+				}
+			}
+			
+			//alert(membershipMatrix) ;
+			
+			// check convergence
+			max = -1 ;
+			diff;
+			for (i = 0 ; i < membershipMatrix.rows ; i++)
+				for (j = 0 ; j < membershipMatrix.cols ; j++) {
+					diff = Math.abs(membershipMatrix.mtx[i][j] - previousMembershipMatrix.mtx[i][j]) ;
+					if (diff > max)
+						max = diff ;
+				}
+			
+			if (max < epsilon)
+				repeat = false ;
 
+			nb_iters++ ;
+
+			// check nb of iters
+			if (nb_iters > figue.FCMEANS_MAX_ITERATIONS)
+				repeat = false ;
+		}
+		return { 'centroids': centroids , 'membershipMatrix': membershipMatrix} ;
+	
+	}
+	
+			
 	function Matrix (rows,cols) 
 	{
 		this.rows = rows ;
@@ -422,12 +531,14 @@ var figue = function () {
 		MAX_DISTANCE: 2,
 		PRINT_VECTOR_VALUE_PRECISION: 2,
 		KMEANS_MAX_ITERATIONS: 10,
+		FCMEANS_MAX_ITERATIONS: 3,
 
 		Matrix: Matrix,
 		Node: Node,
 		generateDendogram: generateDendogram,
 		agglomerate: agglomerate,
-		kmeans: kmeans
+		kmeans: kmeans,
+		fcmeans: fcmeans
 	}
 }() ;
 
@@ -438,6 +549,15 @@ figue.Matrix.prototype.toString = function()
 	for (var i = 0 ; i < this.rows ; i++) 
 		lines.push (this.mtx[i].join("\t")) ;
 	return lines.join ("\n") ;
+}
+
+
+figue.Matrix.prototype.copy = function() 
+{
+	var duplicate = new figue.Matrix(this.rows, this.cols) ;
+	for (var i = 0 ; i < this.rows ; i++)
+		duplicate.mtx[i] = this.mtx[i].slice(0); 
+	return duplicate ;
 }
 
 figue.Node.prototype.isLeaf = function() 
