@@ -6,7 +6,7 @@ This project provides a collection of clustering algorithms implemented in Javas
 
 figue has been successfully tested on IE, Firefox, Chrome and Safari.
 
-Here is an [http://web.science.mq.edu.au/~jydelort/figue/demo.html interactive demo] of figue. 
+Here is an [http://jydelort.appspot.com/resources/figue/demo.html interactive demo] of figue. 
 
 = Using figue =
 
