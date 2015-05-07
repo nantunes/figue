@@ -19,6 +19,14 @@ var figue = function () {
 		return d ;
 	}
 
+	function squaredEuclidianDistance (vec1 , vec2) {
+		var N = vec1.length ;
+		var d = 0 ;
+		for (var i = 0 ; i < N ; i++)
+			d += Math.pow (vec1[i] - vec2[i], 2)
+		return d ;
+	}
+
 	function manhattanDistance (vec1 , vec2) {
 		var N = vec1.length ;
 		var d = 0 ;
@@ -210,6 +218,8 @@ var figue = function () {
 
 		if (distance == figue.EUCLIDIAN_DISTANCE)
 			distance = euclidianDistance ;
+		else if (distance == figue.SQUARED_EUCLIDIAN_DISTANCE)
+			distance = squaredEuclidianDistance ;
 		else if (distance == figue.MANHATTAN_DISTANCE)
 			distance = manhattanDistance ;
 		else if (distance == figue.MAX_DISTANCE)
@@ -522,13 +532,14 @@ var figue = function () {
 
 
 
-	return { 
+	return {
 		SINGLE_LINKAGE: 0,
 		COMPLETE_LINKAGE: 1,
 		AVERAGE_LINKAGE:2 ,
 		EUCLIDIAN_DISTANCE: 0,
 		MANHATTAN_DISTANCE: 1,
 		MAX_DISTANCE: 2,
+		SQUARED_EUCLIDIAN_DISTANCE: 3,
 		PRINT_VECTOR_VALUE_PRECISION: 2,
 		KMEANS_MAX_ITERATIONS: 10,
 		FCMEANS_MAX_ITERATIONS: 3,
@@ -574,6 +585,38 @@ figue.Node.prototype.buildDendogram = function (sep, balanced,withLabel,withCent
 	return lines.join ("\n") ;	
 }
 
+
+figue.Node.prototype.cutHeight = function (height)
+{
+	var clusters = [];
+	this._cut(this.depth - height, null, clusters, this);
+	return clusters;
+}
+
+figue.Node.prototype.cutDistance = function (distance)
+{
+	var clusters = [];
+	this._cut(null, distance, clusters, this);
+	return clusters;
+}
+
+figue.Node.prototype._cut = function (step, distance, clusters, currentNode)
+{
+	if(step === 0 || currentNode.isLeaf()) {
+		clusters.push(currentNode);
+		return;
+	}
+
+	if(distance != null && distance > currentNode.dist) {
+		clusters.push(currentNode);
+		return;
+	}
+
+	var next_step = step ? step-1 : null;
+
+	this._cut(next_step, distance, clusters, currentNode.left);
+	this._cut(next_step, distance, clusters, currentNode.right);
+}
 
 Array.prototype.compare = function(testArr) {
     if (this.length != testArr.length) return false;
