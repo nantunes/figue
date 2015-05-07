@@ -19,6 +19,14 @@ var figue = function () {
 		return d ;
 	}
 
+	function squaredEuclidianDistance (vec1 , vec2) {
+		var N = vec1.length ;
+		var d = 0 ;
+		for (var i = 0 ; i < N ; i++)
+			d += Math.pow (vec1[i] - vec2[i], 2)
+		return d ;
+	}
+
 	function manhattanDistance (vec1 , vec2) {
 		var N = vec1.length ;
 		var d = 0 ;
@@ -210,6 +218,8 @@ var figue = function () {
 
 		if (distance == figue.EUCLIDIAN_DISTANCE)
 			distance = euclidianDistance ;
+		else if (distance == figue.SQUARED_EUCLIDIAN_DISTANCE)
+			distance = squaredEuclidianDistance ;
 		else if (distance == figue.MANHATTAN_DISTANCE)
 			distance = manhattanDistance ;
 		else if (distance == figue.MAX_DISTANCE)
@@ -522,13 +532,14 @@ var figue = function () {
 
 
 
-	return { 
+	return {
 		SINGLE_LINKAGE: 0,
 		COMPLETE_LINKAGE: 1,
 		AVERAGE_LINKAGE:2 ,
 		EUCLIDIAN_DISTANCE: 0,
 		MANHATTAN_DISTANCE: 1,
 		MAX_DISTANCE: 2,
+		SQUARED_EUCLIDIAN_DISTANCE: 3,
 		PRINT_VECTOR_VALUE_PRECISION: 2,
 		KMEANS_MAX_ITERATIONS: 10,
 		FCMEANS_MAX_ITERATIONS: 3,
