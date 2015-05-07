@@ -411,7 +411,7 @@ var figue = function () {
 				repeat = false ;
 			
 		}
-		return { 'centroids': centroids , 'assignments': assignments} ;
+		return { 'centroids': centroids , 'assignments': assignments, 'sizes': clusterSizes} ;
 
 	}
 	
