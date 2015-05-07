@@ -8,15 +8,20 @@ Here is an [interactive demo](http://jydelort.appspot.com/resources/figue/demo.h
 
 # Using figue #
 
-In order to use figue in your web page, simply link to it in the head section of your HTML page, e.g.:
+You can copy figue.js file to your project or install it using [bower](http://bower.io/) (recommended):
+```bash
+bower install figue -S
+```
+
+In order to use figue in your project simply link to it in the head section of your HTML page, e.g.:
 
 ```html
 <head>
 <script type="text/javascript" src="figue.js"></script>
 </head>
-
 ```
 
+You can also use tools like [wiredep](https://github.com/taptapship/wiredep), and if using build tools like [grunt](http://gruntjs.com/) you can automate it with plugins like [grunt-wiredep](https://github.com/stephenplusplus/grunt-wiredep).
 
 # K-means #
 
