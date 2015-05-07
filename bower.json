@@ -1,0 +1,27 @@
+{
+  "name": "figue",
+  "main": "figue.js",
+  "version": "1.0.1",
+  "homepage": "https://github.com/nantunes/figue",
+  "description": "A Collection of Clustering Algorithms Implemented in Javascript",
+  "keywords": [
+    "hierarchicalclustering",
+    "kmeans",
+    "fcmeans",
+    "clustering",
+    "visualization",
+    "javascript",
+    "dendogram"
+  ],
+  "authors": [
+    "Jean-Yves Delort <jydelort@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
