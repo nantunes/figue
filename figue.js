@@ -586,6 +586,38 @@ figue.Node.prototype.buildDendogram = function (sep, balanced,withLabel,withCent
 }
 
 
+figue.Node.prototype.cutHeight = function (height)
+{
+	var clusters = [];
+	this._cut(this.depth - height, null, clusters, this);
+	return clusters;
+}
+
+figue.Node.prototype.cutDistance = function (distance)
+{
+	var clusters = [];
+	this._cut(null, distance, clusters, this);
+	return clusters;
+}
+
+figue.Node.prototype._cut = function (step, distance, clusters, currentNode)
+{
+	if(step === 0 || currentNode.isLeaf()) {
+		clusters.push(currentNode);
+		return;
+	}
+
+	if(distance != null && distance > currentNode.dist) {
+		clusters.push(currentNode);
+		return;
+	}
+
+	var next_step = step ? step-1 : null;
+
+	this._cut(next_step, distance, clusters, currentNode.left);
+	this._cut(next_step, distance, clusters, currentNode.right);
+}
+
 Array.prototype.compare = function(testArr) {
     if (this.length != testArr.length) return false;
     for (var i = 0; i < testArr.length; i++) {
