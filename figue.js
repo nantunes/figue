@@ -299,6 +299,243 @@ var figue = function () {
 		return root ;
 	}
 
+	
+	/* Mainly from https://github.com/Fleshgrinder/OPTICS-algorithm/blob/912753072ac6b3c8d705faf72ed57dc8d174717c/optics.js */
+  function optics(vectors, minPts, epsilon, distance) {
+		var i, j;
+
+		var info = {
+			N: vectors.length,
+			minPts: minPts,
+			epsilon: epsilon,
+			objects: [],
+			clusters: []
+		};
+
+    if (distance == figue.EUCLIDIAN_DISTANCE) {
+			info.distance = euclidianDistance;
+		} else if (distance == figue.SQUARED_EUCLIDIAN_DISTANCE) {
+			info.distance = squaredEuclidianDistance;
+		} else if (distance == figue.MANHATTAN_DISTANCE) {
+			info.distance = manhattanDistance;
+		} else if (distance == figue.MAX_DISTANCE) {
+			info.distance = maxDistance;
+		} else {
+			info.distance = distance;
+		}
+
+    var matrixObj = new figue.Matrix(info.N, info.N);
+		info.distMatrix = matrixObj.mtx;
+
+    // Initialize distance matrix and vector of closest clusters
+    for (i = 0; i < info.N; i++) {
+      var object = {
+        index: i,
+				vector: vectors[i],
+				processed: false,
+        coreDistance: Infinity,
+        reachabilityDistance: Infinity
+      };
+
+      var distances = [];
+
+      for (j = 0; j < info.N; j++) {
+        if (i == j) {
+					info.distMatrix[i][j] = Infinity;
+          continue;
+        } else {
+					info.distMatrix[i][j] = info.distance(vectors[i], vectors[j]);
+        }
+
+        if (info.distMatrix[i][j] <= info.epsilon)
+          distances.push(info.distMatrix[i][j]);
+      }
+
+      // Only calculate core distance if this is a core point.
+      if (distances.length >= info.minPts) {
+        // Sort our array and get the maximum value from our minimum point.
+        object.coreDistance = distances.sort(function(a, b) {
+          return a - b;
+        })[info.minPts - 1];
+      }
+
+			info.objects.push(object);
+    }
+
+    for (j = 0; j < info.N; j++) {
+      var obj = info.objects[j];
+
+      if (obj.processed) {
+        continue;
+      }
+
+			obj.processed = true;
+
+			info.clusters.push([obj]);
+      var clusterId = info.clusters.length - 1;
+
+      orderedSeed = OrderedSeed();
+
+      var neighbors = rangeQuery(info, obj);
+
+      if (obj.coreDistance !== Infinity) {
+        calculateReachability(info, obj, neighbors, orderedSeed);
+				expandCluster(info, orderedSeed, clusterId);
+      }
+    }
+
+    return info;
+  }
+
+  /**
+   * @class Priority queue implementation specific for our usecase.
+   * @constructor
+   * @type object
+   */
+  function OrderedSeed() {
+    var
+
+    /**
+     * Contains our object.
+     *
+     * @type array
+     */
+      _seed = [],
+
+      /**
+       * Sort our seed from low to high.
+       *
+       * @function
+       */
+      _sort = function() {
+        _seed.sort(function(a, b) {
+          if (a.reachabilityDistance === b.reachabilityDistance) {
+            return b.index - a.index;
+          }
+          return b.reachabilityDistance - a.reachabilityDistance;
+        });
+      };
+
+    return {
+
+      /**
+       * Insert a new object, or update the existing one if we have one.
+       *
+       * @function
+       * @param {object} obj
+       *   The object to insert into the seed.
+       */
+      insertOrUpdate: function(obj) {
+        // Check if this object is already within our seed.
+        for (var i = 0; i < _seed.length; i++) {
+          if (_seed[i] !== undefined && obj.index === _seed[i].index) {
+            _seed[i] = obj;
+            _sort();
+            return;
+          }
+        }
+
+        // Insert the object into our seed if we couldn't update it.
+        _seed.push(obj);
+        _sort();
+      },
+
+      /**
+       * @returns {number}
+       *   The length of the seed.
+       */
+      length: function() {
+        return _seed.length;
+      },
+
+      /**
+       * Get object from offset.
+       *
+       * @param {number} offset
+       *   Offset in the array.
+       * @returns {object}
+       *   The object at offset.
+       */
+      get: function(offset) {
+        return _seed[offset];
+      },
+
+      /**
+       * Removes and returns the next element in the seed.
+       *
+       * @function
+       * @return {object}
+       *   The next element within our seed.
+       */
+      pop: function() {
+        return _seed.pop();
+      }
+    };
+  }
+
+  /**
+   * Calculate reachability from object to each neighbor.
+   *
+   * @param {object} obj
+   *   The object from which we should calculate the reachability.
+   * @param {OrderedSeed} neighbors
+   *   The neighbors of this object.
+   */
+  function calculateReachability(info, obj, neighbors, orderedSeed) {
+    for (var i = 0, nl = neighbors.length(); i != nl; ++i) {
+      var neighbor = neighbors.get(i);
+      tmpReachability = Math.max(obj.coreDistance, info.distMatrix[obj.index][neighbor.index]);
+      neighbor.reachabilityDistance = Math.min(neighbor.reachabilityDistance, tmpReachability);
+      orderedSeed.insertOrUpdate(neighbor);
+    }
+  }
+
+  /**
+   * Get all unprocessed neighbors.
+   *
+   * @param {object} obj
+   *   The object for which we should find all unprocessed neighbors.
+   * @return {object}
+   *   All unprocessed neighbors within the core distance.
+   */
+  function rangeQuery(info, obj) {
+    var unprocessedNeighbors = OrderedSeed();
+
+    if (obj === undefined) {
+      return {};
+    }
+
+    for (j = 0; j < info.N; j++) {
+      var neighborObj = info.objects[j];
+
+      if (!neighborObj.processed && info.distMatrix[neighborObj.index][obj.index] <= info.epsilon) {
+        unprocessedNeighbors.insertOrUpdate(neighborObj);
+      }
+    }
+
+    return unprocessedNeighbors;
+  }
+
+	function expandCluster(info, orderedSeed, clusterId) {
+		for (var i = 0, ol = orderedSeed.length(); i !== ol; ++i) {
+			var obj = orderedSeed.get(i);
+
+			if (obj.processed) {
+        continue;
+      }
+
+			var neighbors = rangeQuery(info, obj);
+
+			info.clusters[clusterId].push(obj);
+
+			obj.processed = true;
+
+			if (obj.coreDistance !== Infinity) {
+				calculateReachability(info, obj, neighbors, orderedSeed);
+				expandCluster(info, orderedSeed, clusterId);
+			}
+		}
+	}
 
 	
 	function getRandomVectors(k, vectors) {
